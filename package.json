@@ -1,0 +1,8 @@
+{
+  "name": "did-management",
+  "version": "1.0.4",
+  "description": "DID Management - Comprehensive DID and Area Code management application",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
