@@ -2,7 +2,16 @@
   "name": "did-management",
   "version": "1.0.4",
   "description": "DID Management - Comprehensive DID and Area Code management application",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "dev": "cd frontend && npm start",
+    "install-all": "cd frontend && npm install && cd ../api && npm install"
+  },
   "dependencies": {
-    "node-fetch": "^3.3.2"
+    "node-fetch": "^3.3.2",
+    "@vercel/node": "^3.0.0"
+  },
+  "devDependencies": {
+    "vercel": "^32.0.0"
   }
 }

@@ -1,0 +1,19 @@
+{
+  "name": "did-management-api",
+  "version": "1.0.0",
+  "description": "Serverless API functions for DID Management",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "tsc",
+    "deploy": "vercel"
+  },
+  "dependencies": {
+    "@vercel/node": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "typescript": "^5.0.0",
+    "vercel": "^32.0.0"
+  }
+}
