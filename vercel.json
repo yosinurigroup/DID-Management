@@ -1,6 +1,12 @@
 {
   "buildCommand": "cd frontend && npm ci && npm run build",
-  "devCommand": "cd frontend && npm start",
+  "outputDirectory": "frontend/build",
   "installCommand": "cd frontend && npm ci",
-  "outputDirectory": "frontend/build"
+  "devCommand": "cd frontend && npm start",
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
+    }
+  ]
 }
