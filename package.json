@@ -3,7 +3,7 @@
   "version": "1.0.4",
   "description": "DID Management - Comprehensive DID and Area Code management application",
   "scripts": {
-    "build": "cd frontend && npm install && npm run build",
+    "build": "cd frontend && npm ci && npm run build",
     "dev": "cd frontend && npm start",
     "install-all": "cd frontend && npm install && cd ../api && npm install"
   },

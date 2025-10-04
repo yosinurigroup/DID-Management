@@ -9,7 +9,7 @@
       }
     },
     {
-      "src": "api/**/*.ts",
+      "src": "api/*.ts",
       "use": "@vercel/node"
     }
   ],
@@ -21,6 +21,14 @@
     {
       "src": "/static/(.*)",
       "dest": "/frontend/build/static/$1"
+    },
+    {
+      "src": "/manifest.json",
+      "dest": "/frontend/build/manifest.json"
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "/frontend/build/favicon.ico"
     },
     {
       "src": "/(.*)",
