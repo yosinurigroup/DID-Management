@@ -1,0 +1,351 @@
+import React, { useState, useEffect } from 'react';
+// Import the area codes data
+import { areaCodesData, AreaCode } from '../data/areaCodesData';
+          <div className="relative">
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Filter by States
+            </label>
+            <div className="space-y-2">
+              {/* State Selection */}
+              <div className="flex flex-wrap gap-2 max-w-md">
+                {Array.from(new Set(areaCodes.map(ac => ac.state))).sort().map(state => (
+                  <label key={state} className="inline-flex items-center">
+                    <input
+                      type="checkbox"
+                      checked={selectedStates.includes(state)}
+                      onChange={(e) => {
+                        if (e.target.checked) {
+                          setSelectedStates([...selectedStates, state]);
+                        } else {
+                          setSelectedStates(selectedStates.filter(s => s !== state));
+                        }
+                      }}
+                      className="form-checkbox h-4 w-4 text-blue-600 transition duration-150 ease-in-out"
+                    />
+                    <span className="ml-2 text-sm text-gray-700">{state}</span>
+                  </label>
+                ))}
+              </div>
+              {/* Selected states summary */}
+              {selectedStates.length > 0 && (
+                <div className="text-sm text-blue-600">
+                  Selected: {selectedStates.length} state{selectedStates.length !== 1 ? 's' : ''} 
+                  ({filteredAreaCodes.length} area codes)
+                </div>
+              )}
+              {/* Clear selection button */}
+              {selectedStates.length > 0 && (
+                <button
+                  onClick={() => setSelectedStates([])}
+                  className="text-sm text-red-600 hover:text-red-800"
+                >
+                  Clear all selections
+                </button>
+              )}
+            </div>
+          </div>
+          <button 
+            onClick={() => setShowAddModal(true)}
+            className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+          >
+            Add Area Code
+          </button>
+        </div>a, AreaCode } from '../data/areaCodesData';
+
+const AreaCodes: React.FC = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [selectedStates, setSelectedStates] = useState<string[]>([]);
+  const [areaCodes, setAreaCodes] = useState<AreaCode[]>([]);
+  const [showAddModal, setShowAddModal] = useState(false);
+  const [newAreaCode, setNewAreaCode] = useState({ code: '', state: '' });
+  const [isAddingNewState, setIsAddingNewState] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
+
+  // Load the real area codes data
+  useEffect(() => {
+    console.log('Loading area codes data...', areaCodesData);
+    if (areaCodesData && Array.isArray(areaCodesData)) {
+      setAreaCodes(areaCodesData);
+      console.log('Loaded area codes:', areaCodesData.length);
+    } else {
+      console.error('Failed to load area codes data');
+    }
+  }, []);
+
+  const states = ['all', ...Array.from(new Set(areaCodes.map(ac => ac.state)))];
+
+  const handleAddAreaCode = () => {
+    if (newAreaCode.code && newAreaCode.state) {
+      // Check if area code already exists
+      const existingAreaCode = areaCodes.find(ac => ac.code === newAreaCode.code);
+      
+      if (existingAreaCode) {
+        setErrorMessage('This Area Code already in the list');
+        return;
+      }
+      
+      // Clear any previous error message
+      setErrorMessage('');
+      
+      const areaCode: AreaCode = {
+        id: (areaCodes.length + 1).toString(),
+        code: newAreaCode.code,
+        region: newAreaCode.state,
+        state: newAreaCode.state,
+        timezone: 'EST', // Default timezone
+        totalDIDs: 0,
+        activeDIDs: 0
+      };
+      
+      setAreaCodes([...areaCodes, areaCode]);
+      setNewAreaCode({ code: '', state: '' });
+      setShowAddModal(false);
+      setIsAddingNewState(false);
+    }
+  };
+
+  const handleCloseModal = () => {
+    setShowAddModal(false);
+    setNewAreaCode({ code: '', state: '' });
+    setIsAddingNewState(false);
+    setErrorMessage('');
+  };
+
+  const filteredAreaCodes = areaCodes.filter(areaCode => {
+    const matchesSearch = areaCode.code.includes(searchTerm) ||
+                         areaCode.region.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                         areaCode.state.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesState = selectedStates.length === 0 || selectedStates.includes(areaCode.state);
+    return matchesSearch && matchesState;
+  });
+
+  return (
+    <div className="space-y-6">
+      {/* Header Actions */}
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-4 sm:space-y-0">
+        <div className="flex-1 max-w-lg">
+          <input
+            type="text"
+            placeholder="Search by area code, region, or state..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          />
+        </div>
+        <div className="flex items-center space-x-4">
+          <select
+            value={selectedState}
+            onChange={(e) => setSelectedState(e.target.value)}
+            className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          >
+            {states.map(state => (
+              <option key={state} value={state}>
+                {state === 'all' ? 'All States' : state}
+              </option>
+            ))}
+          </select>
+                      <button 
+              onClick={() => setShowAddModal(true)}
+              className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+            >
+              Add Area Code
+            </button>
+        </div>
+      </div>
+
+      {/* Summary Statistics */}
+      <div className="bg-white rounded-lg shadow p-6">
+        <h3 className="text-lg font-medium text-gray-900 mb-4">Area Code Statistics</h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="text-center">
+            <p className="text-2xl font-bold text-blue-600">{areaCodes.length}</p>
+            <p className="text-sm text-gray-500">Total Area Codes</p>
+          </div>
+          <div className="text-center">
+            <p className="text-2xl font-bold text-green-600">
+              {Array.from(new Set(areaCodes.map(ac => ac.state))).length}
+            </p>
+            <p className="text-sm text-gray-500">Total States</p>
+          </div>
+          <div className="text-center">
+            <p className="text-2xl font-bold text-purple-600">
+              {areaCodes.reduce((sum, ac) => sum + ac.totalDIDs, 0)}
+            </p>
+            <p className="text-sm text-gray-500">Total DIDs</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Area Codes Table */}
+      <div className="bg-white rounded-lg shadow overflow-hidden">
+        <div className="px-6 py-4 border-b border-gray-200">
+          <h3 className="text-lg font-medium text-gray-900 text-center">Area Codes</h3>
+        </div>
+        <div className="overflow-x-auto h-96 overflow-y-auto" style={{ height: 'calc(100vh - 400px)' }}>
+          <table className="min-w-full divide-y divide-gray-200">
+            <thead className="bg-gray-50 sticky top-0 z-10">
+              <tr>
+                <th className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  Area Code
+                </th>
+                <th className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  State
+                </th>
+                <th className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  Total DIDs
+                </th>
+                <th className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  Actions
+                </th>
+              </tr>
+            </thead>
+            <tbody className="bg-white divide-y divide-gray-200">
+              {filteredAreaCodes.map((areaCode) => {
+                return (
+                  <tr key={areaCode.id} className="hover:bg-gray-50">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 text-center">
+                      {areaCode.code}
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-center">
+                      {areaCode.state}
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-center">
+                      {areaCode.totalDIDs}
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-center">
+                      <button className="text-blue-600 hover:text-blue-900 mr-3">
+                        Edit
+                      </button>
+                      <button className="text-red-600 hover:text-red-900">
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+
+        {filteredAreaCodes.length === 0 && (
+          <div className="text-center py-12">
+            <p className="text-gray-500 mb-4">No area codes found.</p>
+            <p className="text-sm text-gray-400">Upload your CSV file to get started.</p>
+          </div>
+        )}
+      </div>
+
+      {/* Add Area Code Modal */}
+      {showAddModal && (
+        <div className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-50">
+          <div className="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
+            <div className="mt-3">
+              <div className="flex items-center justify-between mb-4">
+                <h3 className="text-lg font-medium text-gray-900">Add New Area Code</h3>
+                <button
+                  onClick={handleCloseModal}
+                  className="text-gray-400 hover:text-gray-600"
+                >
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              
+              <div className="space-y-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                    Area Code
+                  </label>
+                  <input
+                    type="text"
+                    value={newAreaCode.code}
+                    onChange={(e) => {
+                      setNewAreaCode({ ...newAreaCode, code: e.target.value });
+                      if (errorMessage) setErrorMessage(''); // Clear error when user types
+                    }}
+                    placeholder="e.g., 555"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    maxLength={3}
+                  />
+                </div>
+                
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                    State
+                  </label>
+                  {!isAddingNewState ? (
+                    <div className="space-y-2">
+                      <select
+                        value={newAreaCode.state}
+                        onChange={(e) => {
+                          if (e.target.value === 'ADD_NEW') {
+                            setIsAddingNewState(true);
+                            setNewAreaCode({ ...newAreaCode, state: '' });
+                          } else {
+                            setNewAreaCode({ ...newAreaCode, state: e.target.value });
+                          }
+                        }}
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      >
+                        <option value="">Select a state</option>
+                        {Array.from(new Set(areaCodes.map(ac => ac.state))).sort().map(state => (
+                          <option key={state} value={state}>{state}</option>
+                        ))}
+                        <option value="ADD_NEW">+ Add New State</option>
+                      </select>
+                    </div>
+                  ) : (
+                    <div className="space-y-2">
+                      <input
+                        type="text"
+                        value={newAreaCode.state}
+                        onChange={(e) => setNewAreaCode({ ...newAreaCode, state: e.target.value })}
+                        placeholder="Enter new state name"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      />
+                      <button
+                        onClick={() => {
+                          setIsAddingNewState(false);
+                          setNewAreaCode({ ...newAreaCode, state: '' });
+                        }}
+                        className="text-sm text-gray-600 hover:text-gray-800"
+                      >
+                        ← Back to existing states
+                      </button>
+                    </div>
+                  )}
+                </div>
+              </div>
+              
+              {/* Error Message */}
+              {errorMessage && (
+                <div className="mt-4 p-3 bg-red-100 border border-red-400 text-red-700 rounded-md">
+                  {errorMessage}
+                </div>
+              )}
+              
+              <div className="flex justify-end space-x-3 mt-6">
+                <button
+                  onClick={handleCloseModal}
+                  className="px-4 py-2 bg-gray-300 text-gray-700 rounded-md hover:bg-gray-400 transition-colors"
+                >
+                  Cancel
+                </button>
+                <button
+                  onClick={handleAddAreaCode}
+                  disabled={!newAreaCode.code || !newAreaCode.state}
+                  className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  Add Area Code
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default AreaCodes;

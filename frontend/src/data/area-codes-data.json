@@ -1,0 +1,2992 @@
+{
+  "areaCodes": [
+    {
+      "id": "1",
+      "code": "239",
+      "region": "Florida",
+      "state": "Florida",
+      "timezone": "EST",
+      "totalDIDs": 566,
+      "activeDIDs": 348
+    },
+    {
+      "id": "2",
+      "code": "305",
+      "region": "Florida",
+      "state": "Florida",
+      "timezone": "EST",
+      "totalDIDs": 958,
+      "activeDIDs": 489
+    },
+    {
+      "id": "3",
+      "code": "321",
+      "region": "Florida",
+      "state": "Florida",
+      "timezone": "EST",
+      "totalDIDs": 18,
+      "activeDIDs": 185
+    },
+    {
+      "id": "4",
+      "code": "352",
+      "region": "Florida",
+      "state": "Florida",
+      "timezone": "EST",
+      "totalDIDs": 791,
+      "activeDIDs": 405
+    },
+    {
+      "id": "5",
+      "code": "386",
+      "region": "Florida",
+      "state": "Florida",
+      "timezone": "EST",
+      "totalDIDs": 460,
+      "activeDIDs": 367
+    },
+    {
+      "id": "6",
+      "code": "407",
+      "region": "Florida",
+      "state": "Florida",
+      "timezone": "EST",
+      "totalDIDs": 866,
+      "activeDIDs": 142
+    },
+    {
+      "id": "7",
+      "code": "561",
+      "region": "Florida",
+      "state": "Florida",
+      "timezone": "EST",
+      "totalDIDs": 887,
+      "activeDIDs": 200
+    },
+    {
+      "id": "8",
+      "code": "727",
+      "region": "Florida",
+      "state": "Florida",
+      "timezone": "EST",
+      "totalDIDs": 47,
+      "activeDIDs": 443
+    },
+    {
+      "id": "9",
+      "code": "754",
+      "region": "Florida",
+      "state": "Florida",
+      "timezone": "EST",
+      "totalDIDs": 994,
+      "activeDIDs": 322
+    },
+    {
+      "id": "10",
+      "code": "772",
+      "region": "Florida",
+      "state": "Florida",
+      "timezone": "EST",
+      "totalDIDs": 400,
+      "activeDIDs": 230
+    },
+    {
+      "id": "11",
+      "code": "786",
+      "region": "Florida",
+      "state": "Florida",
+      "timezone": "EST",
+      "totalDIDs": 555,
+      "activeDIDs": 55
+    },
+    {
+      "id": "12",
+      "code": "813",
+      "region": "Florida",
+      "state": "Florida",
+      "timezone": "EST",
+      "totalDIDs": 757,
+      "activeDIDs": 318
+    },
+    {
+      "id": "13",
+      "code": "850",
+      "region": "Florida",
+      "state": "Florida",
+      "timezone": "EST",
+      "totalDIDs": 812,
+      "activeDIDs": 163
+    },
+    {
+      "id": "14",
+      "code": "863",
+      "region": "Florida",
+      "state": "Florida",
+      "timezone": "EST",
+      "totalDIDs": 925,
+      "activeDIDs": 390
+    },
+    {
+      "id": "15",
+      "code": "904",
+      "region": "Florida",
+      "state": "Florida",
+      "timezone": "EST",
+      "totalDIDs": 537,
+      "activeDIDs": 204
+    },
+    {
+      "id": "16",
+      "code": "941",
+      "region": "Florida",
+      "state": "Florida",
+      "timezone": "EST",
+      "totalDIDs": 598,
+      "activeDIDs": 343
+    },
+    {
+      "id": "17",
+      "code": "954",
+      "region": "Florida",
+      "state": "Florida",
+      "timezone": "EST",
+      "totalDIDs": 158,
+      "activeDIDs": 89
+    },
+    {
+      "id": "18",
+      "code": "209",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 786,
+      "activeDIDs": 248
+    },
+    {
+      "id": "19",
+      "code": "213",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 35,
+      "activeDIDs": 380
+    },
+    {
+      "id": "20",
+      "code": "279",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 161,
+      "activeDIDs": 328
+    },
+    {
+      "id": "21",
+      "code": "310",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 180,
+      "activeDIDs": 390
+    },
+    {
+      "id": "22",
+      "code": "323",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 958,
+      "activeDIDs": 62
+    },
+    {
+      "id": "23",
+      "code": "408",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 144,
+      "activeDIDs": 5
+    },
+    {
+      "id": "24",
+      "code": "415",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 274,
+      "activeDIDs": 205
+    },
+    {
+      "id": "25",
+      "code": "424",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 536,
+      "activeDIDs": 21
+    },
+    {
+      "id": "26",
+      "code": "442",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 132,
+      "activeDIDs": 27
+    },
+    {
+      "id": "27",
+      "code": "510",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 889,
+      "activeDIDs": 494
+    },
+    {
+      "id": "28",
+      "code": "530",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 418,
+      "activeDIDs": 352
+    },
+    {
+      "id": "29",
+      "code": "559",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 528,
+      "activeDIDs": 408
+    },
+    {
+      "id": "30",
+      "code": "562",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 88,
+      "activeDIDs": 357
+    },
+    {
+      "id": "31",
+      "code": "619",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 287,
+      "activeDIDs": 237
+    },
+    {
+      "id": "32",
+      "code": "626",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 952,
+      "activeDIDs": 297
+    },
+    {
+      "id": "33",
+      "code": "628",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 19,
+      "activeDIDs": 253
+    },
+    {
+      "id": "34",
+      "code": "650",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 894,
+      "activeDIDs": 334
+    },
+    {
+      "id": "35",
+      "code": "657",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 848,
+      "activeDIDs": 239
+    },
+    {
+      "id": "36",
+      "code": "661",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 421,
+      "activeDIDs": 96
+    },
+    {
+      "id": "37",
+      "code": "669",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 503,
+      "activeDIDs": 468
+    },
+    {
+      "id": "38",
+      "code": "707",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 649,
+      "activeDIDs": 307
+    },
+    {
+      "id": "39",
+      "code": "714",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 970,
+      "activeDIDs": 365
+    },
+    {
+      "id": "40",
+      "code": "747",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 398,
+      "activeDIDs": 354
+    },
+    {
+      "id": "41",
+      "code": "760",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 248,
+      "activeDIDs": 116
+    },
+    {
+      "id": "42",
+      "code": "805",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 566,
+      "activeDIDs": 1
+    },
+    {
+      "id": "43",
+      "code": "818",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 669,
+      "activeDIDs": 247
+    },
+    {
+      "id": "44",
+      "code": "820",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 229,
+      "activeDIDs": 220
+    },
+    {
+      "id": "45",
+      "code": "831",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 728,
+      "activeDIDs": 9
+    },
+    {
+      "id": "46",
+      "code": "858",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 851,
+      "activeDIDs": 330
+    },
+    {
+      "id": "47",
+      "code": "909",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 571,
+      "activeDIDs": 111
+    },
+    {
+      "id": "48",
+      "code": "916",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 10,
+      "activeDIDs": 460
+    },
+    {
+      "id": "49",
+      "code": "925",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 970,
+      "activeDIDs": 321
+    },
+    {
+      "id": "50",
+      "code": "949",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 275,
+      "activeDIDs": 149
+    },
+    {
+      "id": "51",
+      "code": "951",
+      "region": "California",
+      "state": "California",
+      "timezone": "EST",
+      "totalDIDs": 122,
+      "activeDIDs": 392
+    },
+    {
+      "id": "52",
+      "code": "205",
+      "region": "Alabama",
+      "state": "Alabama",
+      "timezone": "EST",
+      "totalDIDs": 395,
+      "activeDIDs": 158
+    },
+    {
+      "id": "53",
+      "code": "251",
+      "region": "Alabama",
+      "state": "Alabama",
+      "timezone": "EST",
+      "totalDIDs": 933,
+      "activeDIDs": 189
+    },
+    {
+      "id": "54",
+      "code": "256",
+      "region": "Alabama",
+      "state": "Alabama",
+      "timezone": "EST",
+      "totalDIDs": 508,
+      "activeDIDs": 379
+    },
+    {
+      "id": "55",
+      "code": "334",
+      "region": "Alabama",
+      "state": "Alabama",
+      "timezone": "EST",
+      "totalDIDs": 145,
+      "activeDIDs": 483
+    },
+    {
+      "id": "56",
+      "code": "938",
+      "region": "Alabama",
+      "state": "Alabama",
+      "timezone": "EST",
+      "totalDIDs": 372,
+      "activeDIDs": 257
+    },
+    {
+      "id": "57",
+      "code": "907",
+      "region": "Alaska",
+      "state": "Alaska",
+      "timezone": "EST",
+      "totalDIDs": 647,
+      "activeDIDs": 174
+    },
+    {
+      "id": "58",
+      "code": "480",
+      "region": "Arizona",
+      "state": "Arizona",
+      "timezone": "EST",
+      "totalDIDs": 415,
+      "activeDIDs": 66
+    },
+    {
+      "id": "59",
+      "code": "520",
+      "region": "Arizona",
+      "state": "Arizona",
+      "timezone": "EST",
+      "totalDIDs": 784,
+      "activeDIDs": 300
+    },
+    {
+      "id": "60",
+      "code": "602",
+      "region": "Arizona",
+      "state": "Arizona",
+      "timezone": "EST",
+      "totalDIDs": 827,
+      "activeDIDs": 442
+    },
+    {
+      "id": "61",
+      "code": "623",
+      "region": "Arizona",
+      "state": "Arizona",
+      "timezone": "EST",
+      "totalDIDs": 732,
+      "activeDIDs": 98
+    },
+    {
+      "id": "62",
+      "code": "928",
+      "region": "Arizona",
+      "state": "Arizona",
+      "timezone": "EST",
+      "totalDIDs": 910,
+      "activeDIDs": 437
+    },
+    {
+      "id": "63",
+      "code": "327",
+      "region": "Arkansas",
+      "state": "Arkansas",
+      "timezone": "EST",
+      "totalDIDs": 371,
+      "activeDIDs": 493
+    },
+    {
+      "id": "64",
+      "code": "479",
+      "region": "Arkansas",
+      "state": "Arkansas",
+      "timezone": "EST",
+      "totalDIDs": 323,
+      "activeDIDs": 89
+    },
+    {
+      "id": "65",
+      "code": "501",
+      "region": "Arkansas",
+      "state": "Arkansas",
+      "timezone": "EST",
+      "totalDIDs": 221,
+      "activeDIDs": 325
+    },
+    {
+      "id": "66",
+      "code": "870",
+      "region": "Arkansas",
+      "state": "Arkansas",
+      "timezone": "EST",
+      "totalDIDs": 519,
+      "activeDIDs": 494
+    },
+    {
+      "id": "67",
+      "code": "303",
+      "region": "Colorado",
+      "state": "Colorado",
+      "timezone": "EST",
+      "totalDIDs": 254,
+      "activeDIDs": 358
+    },
+    {
+      "id": "68",
+      "code": "719",
+      "region": "Colorado",
+      "state": "Colorado",
+      "timezone": "EST",
+      "totalDIDs": 371,
+      "activeDIDs": 408
+    },
+    {
+      "id": "69",
+      "code": "720",
+      "region": "Colorado",
+      "state": "Colorado",
+      "timezone": "EST",
+      "totalDIDs": 298,
+      "activeDIDs": 191
+    },
+    {
+      "id": "70",
+      "code": "970",
+      "region": "Colorado",
+      "state": "Colorado",
+      "timezone": "EST",
+      "totalDIDs": 85,
+      "activeDIDs": 287
+    },
+    {
+      "id": "71",
+      "code": "983",
+      "region": "Colorado",
+      "state": "Colorado",
+      "timezone": "EST",
+      "totalDIDs": 498,
+      "activeDIDs": 16
+    },
+    {
+      "id": "72",
+      "code": "203",
+      "region": "Connecticut",
+      "state": "Connecticut",
+      "timezone": "EST",
+      "totalDIDs": 800,
+      "activeDIDs": 184
+    },
+    {
+      "id": "73",
+      "code": "475",
+      "region": "Connecticut",
+      "state": "Connecticut",
+      "timezone": "EST",
+      "totalDIDs": 242,
+      "activeDIDs": 354
+    },
+    {
+      "id": "74",
+      "code": "860",
+      "region": "Connecticut",
+      "state": "Connecticut",
+      "timezone": "EST",
+      "totalDIDs": 782,
+      "activeDIDs": 392
+    },
+    {
+      "id": "75",
+      "code": "959",
+      "region": "Connecticut",
+      "state": "Connecticut",
+      "timezone": "EST",
+      "totalDIDs": 598,
+      "activeDIDs": 99
+    },
+    {
+      "id": "76",
+      "code": "302",
+      "region": "Delaware",
+      "state": "Delaware",
+      "timezone": "EST",
+      "totalDIDs": 66,
+      "activeDIDs": 309
+    },
+    {
+      "id": "77",
+      "code": "202",
+      "region": "District of Columbia",
+      "state": "District of Columbia",
+      "timezone": "EST",
+      "totalDIDs": 498,
+      "activeDIDs": 373
+    },
+    {
+      "id": "78",
+      "code": "229",
+      "region": "Georgia",
+      "state": "Georgia",
+      "timezone": "EST",
+      "totalDIDs": 420,
+      "activeDIDs": 4
+    },
+    {
+      "id": "79",
+      "code": "404",
+      "region": "Georgia",
+      "state": "Georgia",
+      "timezone": "EST",
+      "totalDIDs": 236,
+      "activeDIDs": 467
+    },
+    {
+      "id": "80",
+      "code": "470",
+      "region": "Georgia",
+      "state": "Georgia",
+      "timezone": "EST",
+      "totalDIDs": 97,
+      "activeDIDs": 106
+    },
+    {
+      "id": "81",
+      "code": "478",
+      "region": "Georgia",
+      "state": "Georgia",
+      "timezone": "EST",
+      "totalDIDs": 245,
+      "activeDIDs": 149
+    },
+    {
+      "id": "82",
+      "code": "678",
+      "region": "Georgia",
+      "state": "Georgia",
+      "timezone": "EST",
+      "totalDIDs": 722,
+      "activeDIDs": 30
+    },
+    {
+      "id": "83",
+      "code": "706",
+      "region": "Georgia",
+      "state": "Georgia",
+      "timezone": "EST",
+      "totalDIDs": 826,
+      "activeDIDs": 437
+    },
+    {
+      "id": "84",
+      "code": "762",
+      "region": "Georgia",
+      "state": "Georgia",
+      "timezone": "EST",
+      "totalDIDs": 639,
+      "activeDIDs": 368
+    },
+    {
+      "id": "85",
+      "code": "770",
+      "region": "Georgia",
+      "state": "Georgia",
+      "timezone": "EST",
+      "totalDIDs": 16,
+      "activeDIDs": 380
+    },
+    {
+      "id": "86",
+      "code": "912",
+      "region": "Georgia",
+      "state": "Georgia",
+      "timezone": "EST",
+      "totalDIDs": 373,
+      "activeDIDs": 326
+    },
+    {
+      "id": "87",
+      "code": "808",
+      "region": "Hawaii",
+      "state": "Hawaii",
+      "timezone": "EST",
+      "totalDIDs": 951,
+      "activeDIDs": 68
+    },
+    {
+      "id": "88",
+      "code": "208",
+      "region": "Idaho",
+      "state": "Idaho",
+      "timezone": "EST",
+      "totalDIDs": 213,
+      "activeDIDs": 243
+    },
+    {
+      "id": "89",
+      "code": "986",
+      "region": "Idaho",
+      "state": "Idaho",
+      "timezone": "EST",
+      "totalDIDs": 517,
+      "activeDIDs": 147
+    },
+    {
+      "id": "90",
+      "code": "217",
+      "region": "Illinois",
+      "state": "Illinois",
+      "timezone": "EST",
+      "totalDIDs": 697,
+      "activeDIDs": 93
+    },
+    {
+      "id": "91",
+      "code": "224",
+      "region": "Illinois",
+      "state": "Illinois",
+      "timezone": "EST",
+      "totalDIDs": 943,
+      "activeDIDs": 430
+    },
+    {
+      "id": "92",
+      "code": "309",
+      "region": "Illinois",
+      "state": "Illinois",
+      "timezone": "EST",
+      "totalDIDs": 917,
+      "activeDIDs": 5
+    },
+    {
+      "id": "93",
+      "code": "312",
+      "region": "Illinois",
+      "state": "Illinois",
+      "timezone": "EST",
+      "totalDIDs": 687,
+      "activeDIDs": 65
+    },
+    {
+      "id": "94",
+      "code": "331",
+      "region": "Illinois",
+      "state": "Illinois",
+      "timezone": "EST",
+      "totalDIDs": 722,
+      "activeDIDs": 353
+    },
+    {
+      "id": "95",
+      "code": "447",
+      "region": "Illinois",
+      "state": "Illinois",
+      "timezone": "EST",
+      "totalDIDs": 866,
+      "activeDIDs": 243
+    },
+    {
+      "id": "96",
+      "code": "464",
+      "region": "Illinois",
+      "state": "Illinois",
+      "timezone": "EST",
+      "totalDIDs": 9,
+      "activeDIDs": 31
+    },
+    {
+      "id": "97",
+      "code": "618",
+      "region": "Illinois",
+      "state": "Illinois",
+      "timezone": "EST",
+      "totalDIDs": 290,
+      "activeDIDs": 445
+    },
+    {
+      "id": "98",
+      "code": "630",
+      "region": "Illinois",
+      "state": "Illinois",
+      "timezone": "EST",
+      "totalDIDs": 834,
+      "activeDIDs": 248
+    },
+    {
+      "id": "99",
+      "code": "708",
+      "region": "Illinois",
+      "state": "Illinois",
+      "timezone": "EST",
+      "totalDIDs": 983,
+      "activeDIDs": 410
+    },
+    {
+      "id": "100",
+      "code": "773",
+      "region": "Illinois",
+      "state": "Illinois",
+      "timezone": "EST",
+      "totalDIDs": 564,
+      "activeDIDs": 176
+    },
+    {
+      "id": "101",
+      "code": "779",
+      "region": "Illinois",
+      "state": "Illinois",
+      "timezone": "EST",
+      "totalDIDs": 189,
+      "activeDIDs": 76
+    },
+    {
+      "id": "102",
+      "code": "815",
+      "region": "Illinois",
+      "state": "Illinois",
+      "timezone": "EST",
+      "totalDIDs": 437,
+      "activeDIDs": 256
+    },
+    {
+      "id": "103",
+      "code": "847",
+      "region": "Illinois",
+      "state": "Illinois",
+      "timezone": "EST",
+      "totalDIDs": 540,
+      "activeDIDs": 340
+    },
+    {
+      "id": "104",
+      "code": "872",
+      "region": "Illinois",
+      "state": "Illinois",
+      "timezone": "EST",
+      "totalDIDs": 814,
+      "activeDIDs": 192
+    },
+    {
+      "id": "105",
+      "code": "219",
+      "region": "Indiana",
+      "state": "Indiana",
+      "timezone": "EST",
+      "totalDIDs": 324,
+      "activeDIDs": 54
+    },
+    {
+      "id": "106",
+      "code": "260",
+      "region": "Indiana",
+      "state": "Indiana",
+      "timezone": "EST",
+      "totalDIDs": 634,
+      "activeDIDs": 100
+    },
+    {
+      "id": "107",
+      "code": "317",
+      "region": "Indiana",
+      "state": "Indiana",
+      "timezone": "EST",
+      "totalDIDs": 150,
+      "activeDIDs": 420
+    },
+    {
+      "id": "108",
+      "code": "463",
+      "region": "Indiana",
+      "state": "Indiana",
+      "timezone": "EST",
+      "totalDIDs": 397,
+      "activeDIDs": 109
+    },
+    {
+      "id": "109",
+      "code": "574",
+      "region": "Indiana",
+      "state": "Indiana",
+      "timezone": "EST",
+      "totalDIDs": 184,
+      "activeDIDs": 429
+    },
+    {
+      "id": "110",
+      "code": "765",
+      "region": "Indiana",
+      "state": "Indiana",
+      "timezone": "EST",
+      "totalDIDs": 392,
+      "activeDIDs": 160
+    },
+    {
+      "id": "111",
+      "code": "812",
+      "region": "Indiana",
+      "state": "Indiana",
+      "timezone": "EST",
+      "totalDIDs": 848,
+      "activeDIDs": 312
+    },
+    {
+      "id": "112",
+      "code": "930",
+      "region": "Indiana",
+      "state": "Indiana",
+      "timezone": "EST",
+      "totalDIDs": 312,
+      "activeDIDs": 178
+    },
+    {
+      "id": "113",
+      "code": "319",
+      "region": "Iowa",
+      "state": "Iowa",
+      "timezone": "EST",
+      "totalDIDs": 677,
+      "activeDIDs": 486
+    },
+    {
+      "id": "114",
+      "code": "515",
+      "region": "Iowa",
+      "state": "Iowa",
+      "timezone": "EST",
+      "totalDIDs": 907,
+      "activeDIDs": 215
+    },
+    {
+      "id": "115",
+      "code": "563",
+      "region": "Iowa",
+      "state": "Iowa",
+      "timezone": "EST",
+      "totalDIDs": 929,
+      "activeDIDs": 394
+    },
+    {
+      "id": "116",
+      "code": "641",
+      "region": "Iowa",
+      "state": "Iowa",
+      "timezone": "EST",
+      "totalDIDs": 373,
+      "activeDIDs": 218
+    },
+    {
+      "id": "117",
+      "code": "712",
+      "region": "Iowa",
+      "state": "Iowa",
+      "timezone": "EST",
+      "totalDIDs": 270,
+      "activeDIDs": 66
+    },
+    {
+      "id": "118",
+      "code": "316",
+      "region": "Kansas",
+      "state": "Kansas",
+      "timezone": "EST",
+      "totalDIDs": 541,
+      "activeDIDs": 476
+    },
+    {
+      "id": "119",
+      "code": "620",
+      "region": "Kansas",
+      "state": "Kansas",
+      "timezone": "EST",
+      "totalDIDs": 306,
+      "activeDIDs": 16
+    },
+    {
+      "id": "120",
+      "code": "785",
+      "region": "Kansas",
+      "state": "Kansas",
+      "timezone": "EST",
+      "totalDIDs": 757,
+      "activeDIDs": 107
+    },
+    {
+      "id": "121",
+      "code": "913",
+      "region": "Kansas",
+      "state": "Kansas",
+      "timezone": "EST",
+      "totalDIDs": 449,
+      "activeDIDs": 435
+    },
+    {
+      "id": "122",
+      "code": "270",
+      "region": "Kentucky",
+      "state": "Kentucky",
+      "timezone": "EST",
+      "totalDIDs": 158,
+      "activeDIDs": 199
+    },
+    {
+      "id": "123",
+      "code": "364",
+      "region": "Kentucky",
+      "state": "Kentucky",
+      "timezone": "EST",
+      "totalDIDs": 283,
+      "activeDIDs": 188
+    },
+    {
+      "id": "124",
+      "code": "502",
+      "region": "Kentucky",
+      "state": "Kentucky",
+      "timezone": "EST",
+      "totalDIDs": 168,
+      "activeDIDs": 207
+    },
+    {
+      "id": "125",
+      "code": "606",
+      "region": "Kentucky",
+      "state": "Kentucky",
+      "timezone": "EST",
+      "totalDIDs": 172,
+      "activeDIDs": 202
+    },
+    {
+      "id": "126",
+      "code": "859",
+      "region": "Kentucky",
+      "state": "Kentucky",
+      "timezone": "EST",
+      "totalDIDs": 187,
+      "activeDIDs": 469
+    },
+    {
+      "id": "127",
+      "code": "225",
+      "region": "Louisiana",
+      "state": "Louisiana",
+      "timezone": "EST",
+      "totalDIDs": 968,
+      "activeDIDs": 303
+    },
+    {
+      "id": "128",
+      "code": "318",
+      "region": "Louisiana",
+      "state": "Louisiana",
+      "timezone": "EST",
+      "totalDIDs": 810,
+      "activeDIDs": 403
+    },
+    {
+      "id": "129",
+      "code": "337",
+      "region": "Louisiana",
+      "state": "Louisiana",
+      "timezone": "EST",
+      "totalDIDs": 728,
+      "activeDIDs": 336
+    },
+    {
+      "id": "130",
+      "code": "504",
+      "region": "Louisiana",
+      "state": "Louisiana",
+      "timezone": "EST",
+      "totalDIDs": 66,
+      "activeDIDs": 191
+    },
+    {
+      "id": "131",
+      "code": "985",
+      "region": "Louisiana",
+      "state": "Louisiana",
+      "timezone": "EST",
+      "totalDIDs": 385,
+      "activeDIDs": 381
+    },
+    {
+      "id": "132",
+      "code": "207",
+      "region": "Maine",
+      "state": "Maine",
+      "timezone": "EST",
+      "totalDIDs": 544,
+      "activeDIDs": 334
+    },
+    {
+      "id": "133",
+      "code": "227",
+      "region": "Maryland",
+      "state": "Maryland",
+      "timezone": "EST",
+      "totalDIDs": 184,
+      "activeDIDs": 200
+    },
+    {
+      "id": "134",
+      "code": "240",
+      "region": "Maryland",
+      "state": "Maryland",
+      "timezone": "EST",
+      "totalDIDs": 446,
+      "activeDIDs": 204
+    },
+    {
+      "id": "135",
+      "code": "301",
+      "region": "Maryland",
+      "state": "Maryland",
+      "timezone": "EST",
+      "totalDIDs": 743,
+      "activeDIDs": 22
+    },
+    {
+      "id": "136",
+      "code": "410",
+      "region": "Maryland",
+      "state": "Maryland",
+      "timezone": "EST",
+      "totalDIDs": 200,
+      "activeDIDs": 54
+    },
+    {
+      "id": "137",
+      "code": "443",
+      "region": "Maryland",
+      "state": "Maryland",
+      "timezone": "EST",
+      "totalDIDs": 309,
+      "activeDIDs": 79
+    },
+    {
+      "id": "138",
+      "code": "667",
+      "region": "Maryland",
+      "state": "Maryland",
+      "timezone": "EST",
+      "totalDIDs": 811,
+      "activeDIDs": 195
+    },
+    {
+      "id": "139",
+      "code": "339",
+      "region": "Massachusetts",
+      "state": "Massachusetts",
+      "timezone": "EST",
+      "totalDIDs": 368,
+      "activeDIDs": 296
+    },
+    {
+      "id": "140",
+      "code": "351",
+      "region": "Massachusetts",
+      "state": "Massachusetts",
+      "timezone": "EST",
+      "totalDIDs": 921,
+      "activeDIDs": 293
+    },
+    {
+      "id": "141",
+      "code": "413",
+      "region": "Massachusetts",
+      "state": "Massachusetts",
+      "timezone": "EST",
+      "totalDIDs": 396,
+      "activeDIDs": 106
+    },
+    {
+      "id": "142",
+      "code": "508",
+      "region": "Massachusetts",
+      "state": "Massachusetts",
+      "timezone": "EST",
+      "totalDIDs": 478,
+      "activeDIDs": 115
+    },
+    {
+      "id": "143",
+      "code": "617",
+      "region": "Massachusetts",
+      "state": "Massachusetts",
+      "timezone": "EST",
+      "totalDIDs": 668,
+      "activeDIDs": 306
+    },
+    {
+      "id": "144",
+      "code": "774",
+      "region": "Massachusetts",
+      "state": "Massachusetts",
+      "timezone": "EST",
+      "totalDIDs": 871,
+      "activeDIDs": 259
+    },
+    {
+      "id": "145",
+      "code": "781",
+      "region": "Massachusetts",
+      "state": "Massachusetts",
+      "timezone": "EST",
+      "totalDIDs": 419,
+      "activeDIDs": 246
+    },
+    {
+      "id": "146",
+      "code": "857",
+      "region": "Massachusetts",
+      "state": "Massachusetts",
+      "timezone": "EST",
+      "totalDIDs": 207,
+      "activeDIDs": 156
+    },
+    {
+      "id": "147",
+      "code": "978",
+      "region": "Massachusetts",
+      "state": "Massachusetts",
+      "timezone": "EST",
+      "totalDIDs": 363,
+      "activeDIDs": 378
+    },
+    {
+      "id": "148",
+      "code": "231",
+      "region": "Michigan",
+      "state": "Michigan",
+      "timezone": "EST",
+      "totalDIDs": 884,
+      "activeDIDs": 83
+    },
+    {
+      "id": "149",
+      "code": "248",
+      "region": "Michigan",
+      "state": "Michigan",
+      "timezone": "EST",
+      "totalDIDs": 927,
+      "activeDIDs": 35
+    },
+    {
+      "id": "150",
+      "code": "269",
+      "region": "Michigan",
+      "state": "Michigan",
+      "timezone": "EST",
+      "totalDIDs": 335,
+      "activeDIDs": 371
+    },
+    {
+      "id": "151",
+      "code": "313",
+      "region": "Michigan",
+      "state": "Michigan",
+      "timezone": "EST",
+      "totalDIDs": 773,
+      "activeDIDs": 326
+    },
+    {
+      "id": "152",
+      "code": "517",
+      "region": "Michigan",
+      "state": "Michigan",
+      "timezone": "EST",
+      "totalDIDs": 617,
+      "activeDIDs": 55
+    },
+    {
+      "id": "153",
+      "code": "586",
+      "region": "Michigan",
+      "state": "Michigan",
+      "timezone": "EST",
+      "totalDIDs": 629,
+      "activeDIDs": 315
+    },
+    {
+      "id": "154",
+      "code": "616",
+      "region": "Michigan",
+      "state": "Michigan",
+      "timezone": "EST",
+      "totalDIDs": 662,
+      "activeDIDs": 236
+    },
+    {
+      "id": "155",
+      "code": "679",
+      "region": "Michigan",
+      "state": "Michigan",
+      "timezone": "EST",
+      "totalDIDs": 637,
+      "activeDIDs": 492
+    },
+    {
+      "id": "156",
+      "code": "734",
+      "region": "Michigan",
+      "state": "Michigan",
+      "timezone": "EST",
+      "totalDIDs": 744,
+      "activeDIDs": 435
+    },
+    {
+      "id": "157",
+      "code": "810",
+      "region": "Michigan",
+      "state": "Michigan",
+      "timezone": "EST",
+      "totalDIDs": 509,
+      "activeDIDs": 84
+    },
+    {
+      "id": "158",
+      "code": "906",
+      "region": "Michigan",
+      "state": "Michigan",
+      "timezone": "EST",
+      "totalDIDs": 210,
+      "activeDIDs": 446
+    },
+    {
+      "id": "159",
+      "code": "947",
+      "region": "Michigan",
+      "state": "Michigan",
+      "timezone": "EST",
+      "totalDIDs": 79,
+      "activeDIDs": 150
+    },
+    {
+      "id": "160",
+      "code": "989",
+      "region": "Michigan",
+      "state": "Michigan",
+      "timezone": "EST",
+      "totalDIDs": 921,
+      "activeDIDs": 377
+    },
+    {
+      "id": "161",
+      "code": "218",
+      "region": "Minnesota",
+      "state": "Minnesota",
+      "timezone": "EST",
+      "totalDIDs": 151,
+      "activeDIDs": 458
+    },
+    {
+      "id": "162",
+      "code": "320",
+      "region": "Minnesota",
+      "state": "Minnesota",
+      "timezone": "EST",
+      "totalDIDs": 363,
+      "activeDIDs": 341
+    },
+    {
+      "id": "163",
+      "code": "507",
+      "region": "Minnesota",
+      "state": "Minnesota",
+      "timezone": "EST",
+      "totalDIDs": 891,
+      "activeDIDs": 459
+    },
+    {
+      "id": "164",
+      "code": "612",
+      "region": "Minnesota",
+      "state": "Minnesota",
+      "timezone": "EST",
+      "totalDIDs": 938,
+      "activeDIDs": 157
+    },
+    {
+      "id": "165",
+      "code": "651",
+      "region": "Minnesota",
+      "state": "Minnesota",
+      "timezone": "EST",
+      "totalDIDs": 225,
+      "activeDIDs": 206
+    },
+    {
+      "id": "166",
+      "code": "763",
+      "region": "Minnesota",
+      "state": "Minnesota",
+      "timezone": "EST",
+      "totalDIDs": 493,
+      "activeDIDs": 494
+    },
+    {
+      "id": "167",
+      "code": "952",
+      "region": "Minnesota",
+      "state": "Minnesota",
+      "timezone": "EST",
+      "totalDIDs": 896,
+      "activeDIDs": 404
+    },
+    {
+      "id": "168",
+      "code": "228",
+      "region": "Mississippi",
+      "state": "Mississippi",
+      "timezone": "EST",
+      "totalDIDs": 792,
+      "activeDIDs": 196
+    },
+    {
+      "id": "169",
+      "code": "601",
+      "region": "Mississippi",
+      "state": "Mississippi",
+      "timezone": "EST",
+      "totalDIDs": 912,
+      "activeDIDs": 456
+    },
+    {
+      "id": "170",
+      "code": "662",
+      "region": "Mississippi",
+      "state": "Mississippi",
+      "timezone": "EST",
+      "totalDIDs": 709,
+      "activeDIDs": 366
+    },
+    {
+      "id": "171",
+      "code": "769",
+      "region": "Mississippi",
+      "state": "Mississippi",
+      "timezone": "EST",
+      "totalDIDs": 519,
+      "activeDIDs": 52
+    },
+    {
+      "id": "172",
+      "code": "314",
+      "region": "Missouri",
+      "state": "Missouri",
+      "timezone": "EST",
+      "totalDIDs": 640,
+      "activeDIDs": 426
+    },
+    {
+      "id": "173",
+      "code": "417",
+      "region": "Missouri",
+      "state": "Missouri",
+      "timezone": "EST",
+      "totalDIDs": 579,
+      "activeDIDs": 113
+    },
+    {
+      "id": "174",
+      "code": "557",
+      "region": "Missouri",
+      "state": "Missouri",
+      "timezone": "EST",
+      "totalDIDs": 191,
+      "activeDIDs": 443
+    },
+    {
+      "id": "175",
+      "code": "573",
+      "region": "Missouri",
+      "state": "Missouri",
+      "timezone": "EST",
+      "totalDIDs": 403,
+      "activeDIDs": 188
+    },
+    {
+      "id": "176",
+      "code": "636",
+      "region": "Missouri",
+      "state": "Missouri",
+      "timezone": "EST",
+      "totalDIDs": 475,
+      "activeDIDs": 3
+    },
+    {
+      "id": "177",
+      "code": "660",
+      "region": "Missouri",
+      "state": "Missouri",
+      "timezone": "EST",
+      "totalDIDs": 76,
+      "activeDIDs": 168
+    },
+    {
+      "id": "178",
+      "code": "816",
+      "region": "Missouri",
+      "state": "Missouri",
+      "timezone": "EST",
+      "totalDIDs": 418,
+      "activeDIDs": 467
+    },
+    {
+      "id": "179",
+      "code": "975",
+      "region": "Missouri",
+      "state": "Missouri",
+      "timezone": "EST",
+      "totalDIDs": 650,
+      "activeDIDs": 403
+    },
+    {
+      "id": "180",
+      "code": "406",
+      "region": "Montana",
+      "state": "Montana",
+      "timezone": "EST",
+      "totalDIDs": 366,
+      "activeDIDs": 196
+    },
+    {
+      "id": "181",
+      "code": "308",
+      "region": "Nebraska",
+      "state": "Nebraska",
+      "timezone": "EST",
+      "totalDIDs": 851,
+      "activeDIDs": 166
+    },
+    {
+      "id": "182",
+      "code": "402",
+      "region": "Nebraska",
+      "state": "Nebraska",
+      "timezone": "EST",
+      "totalDIDs": 843,
+      "activeDIDs": 399
+    },
+    {
+      "id": "183",
+      "code": "531",
+      "region": "Nebraska",
+      "state": "Nebraska",
+      "timezone": "EST",
+      "totalDIDs": 818,
+      "activeDIDs": 451
+    },
+    {
+      "id": "184",
+      "code": "702",
+      "region": "Nevada",
+      "state": "Nevada",
+      "timezone": "EST",
+      "totalDIDs": 342,
+      "activeDIDs": 290
+    },
+    {
+      "id": "185",
+      "code": "725",
+      "region": "Nevada",
+      "state": "Nevada",
+      "timezone": "EST",
+      "totalDIDs": 642,
+      "activeDIDs": 71
+    },
+    {
+      "id": "186",
+      "code": "775",
+      "region": "Nevada",
+      "state": "Nevada",
+      "timezone": "EST",
+      "totalDIDs": 361,
+      "activeDIDs": 72
+    },
+    {
+      "id": "187",
+      "code": "603",
+      "region": "New Hampshire",
+      "state": "New Hampshire",
+      "timezone": "EST",
+      "totalDIDs": 119,
+      "activeDIDs": 196
+    },
+    {
+      "id": "188",
+      "code": "201",
+      "region": "New Jersey",
+      "state": "New Jersey",
+      "timezone": "EST",
+      "totalDIDs": 423,
+      "activeDIDs": 426
+    },
+    {
+      "id": "189",
+      "code": "551",
+      "region": "New Jersey",
+      "state": "New Jersey",
+      "timezone": "EST",
+      "totalDIDs": 707,
+      "activeDIDs": 66
+    },
+    {
+      "id": "190",
+      "code": "609",
+      "region": "New Jersey",
+      "state": "New Jersey",
+      "timezone": "EST",
+      "totalDIDs": 735,
+      "activeDIDs": 366
+    },
+    {
+      "id": "191",
+      "code": "640",
+      "region": "New Jersey",
+      "state": "New Jersey",
+      "timezone": "EST",
+      "totalDIDs": 696,
+      "activeDIDs": 400
+    },
+    {
+      "id": "192",
+      "code": "732",
+      "region": "New Jersey",
+      "state": "New Jersey",
+      "timezone": "EST",
+      "totalDIDs": 29,
+      "activeDIDs": 475
+    },
+    {
+      "id": "193",
+      "code": "848",
+      "region": "New Jersey",
+      "state": "New Jersey",
+      "timezone": "EST",
+      "totalDIDs": 330,
+      "activeDIDs": 42
+    },
+    {
+      "id": "194",
+      "code": "856",
+      "region": "New Jersey",
+      "state": "New Jersey",
+      "timezone": "EST",
+      "totalDIDs": 142,
+      "activeDIDs": 184
+    },
+    {
+      "id": "195",
+      "code": "862",
+      "region": "New Jersey",
+      "state": "New Jersey",
+      "timezone": "EST",
+      "totalDIDs": 766,
+      "activeDIDs": 293
+    },
+    {
+      "id": "196",
+      "code": "908",
+      "region": "New Jersey",
+      "state": "New Jersey",
+      "timezone": "EST",
+      "totalDIDs": 536,
+      "activeDIDs": 256
+    },
+    {
+      "id": "197",
+      "code": "973",
+      "region": "New Jersey",
+      "state": "New Jersey",
+      "timezone": "EST",
+      "totalDIDs": 132,
+      "activeDIDs": 53
+    },
+    {
+      "id": "198",
+      "code": "505",
+      "region": "New Mexico",
+      "state": "New Mexico",
+      "timezone": "EST",
+      "totalDIDs": 590,
+      "activeDIDs": 317
+    },
+    {
+      "id": "199",
+      "code": "575",
+      "region": "New Mexico",
+      "state": "New Mexico",
+      "timezone": "EST",
+      "totalDIDs": 698,
+      "activeDIDs": 382
+    },
+    {
+      "id": "200",
+      "code": "212",
+      "region": "New York",
+      "state": "New York",
+      "timezone": "EST",
+      "totalDIDs": 986,
+      "activeDIDs": 267
+    },
+    {
+      "id": "201",
+      "code": "315",
+      "region": "New York",
+      "state": "New York",
+      "timezone": "EST",
+      "totalDIDs": 580,
+      "activeDIDs": 162
+    },
+    {
+      "id": "202",
+      "code": "332",
+      "region": "New York",
+      "state": "New York",
+      "timezone": "EST",
+      "totalDIDs": 796,
+      "activeDIDs": 444
+    },
+    {
+      "id": "203",
+      "code": "347",
+      "region": "New York",
+      "state": "New York",
+      "timezone": "EST",
+      "totalDIDs": 971,
+      "activeDIDs": 375
+    },
+    {
+      "id": "204",
+      "code": "516",
+      "region": "New York",
+      "state": "New York",
+      "timezone": "EST",
+      "totalDIDs": 521,
+      "activeDIDs": 381
+    },
+    {
+      "id": "205",
+      "code": "518",
+      "region": "New York",
+      "state": "New York",
+      "timezone": "EST",
+      "totalDIDs": 642,
+      "activeDIDs": 175
+    },
+    {
+      "id": "206",
+      "code": "607",
+      "region": "New York",
+      "state": "New York",
+      "timezone": "EST",
+      "totalDIDs": 22,
+      "activeDIDs": 335
+    },
+    {
+      "id": "207",
+      "code": "631",
+      "region": "New York",
+      "state": "New York",
+      "timezone": "EST",
+      "totalDIDs": 571,
+      "activeDIDs": 263
+    },
+    {
+      "id": "208",
+      "code": "646",
+      "region": "New York",
+      "state": "New York",
+      "timezone": "EST",
+      "totalDIDs": 467,
+      "activeDIDs": 150
+    },
+    {
+      "id": "209",
+      "code": "680",
+      "region": "New York",
+      "state": "New York",
+      "timezone": "EST",
+      "totalDIDs": 409,
+      "activeDIDs": 131
+    },
+    {
+      "id": "210",
+      "code": "716",
+      "region": "New York",
+      "state": "New York",
+      "timezone": "EST",
+      "totalDIDs": 593,
+      "activeDIDs": 94
+    },
+    {
+      "id": "211",
+      "code": "718",
+      "region": "New York",
+      "state": "New York",
+      "timezone": "EST",
+      "totalDIDs": 436,
+      "activeDIDs": 263
+    },
+    {
+      "id": "212",
+      "code": "845",
+      "region": "New York",
+      "state": "New York",
+      "timezone": "EST",
+      "totalDIDs": 275,
+      "activeDIDs": 275
+    },
+    {
+      "id": "213",
+      "code": "914",
+      "region": "New York",
+      "state": "New York",
+      "timezone": "EST",
+      "totalDIDs": 396,
+      "activeDIDs": 426
+    },
+    {
+      "id": "214",
+      "code": "917",
+      "region": "New York",
+      "state": "New York",
+      "timezone": "EST",
+      "totalDIDs": 83,
+      "activeDIDs": 41
+    },
+    {
+      "id": "215",
+      "code": "929",
+      "region": "New York",
+      "state": "New York",
+      "timezone": "EST",
+      "totalDIDs": 258,
+      "activeDIDs": 321
+    },
+    {
+      "id": "216",
+      "code": "934",
+      "region": "New York",
+      "state": "New York",
+      "timezone": "EST",
+      "totalDIDs": 456,
+      "activeDIDs": 180
+    },
+    {
+      "id": "217",
+      "code": "252",
+      "region": "North Carolina",
+      "state": "North Carolina",
+      "timezone": "EST",
+      "totalDIDs": 621,
+      "activeDIDs": 483
+    },
+    {
+      "id": "218",
+      "code": "336",
+      "region": "North Carolina",
+      "state": "North Carolina",
+      "timezone": "EST",
+      "totalDIDs": 627,
+      "activeDIDs": 385
+    },
+    {
+      "id": "219",
+      "code": "472",
+      "region": "North Carolina",
+      "state": "North Carolina",
+      "timezone": "EST",
+      "totalDIDs": 612,
+      "activeDIDs": 384
+    },
+    {
+      "id": "220",
+      "code": "704",
+      "region": "North Carolina",
+      "state": "North Carolina",
+      "timezone": "EST",
+      "totalDIDs": 196,
+      "activeDIDs": 162
+    },
+    {
+      "id": "221",
+      "code": "743",
+      "region": "North Carolina",
+      "state": "North Carolina",
+      "timezone": "EST",
+      "totalDIDs": 200,
+      "activeDIDs": 80
+    },
+    {
+      "id": "222",
+      "code": "828",
+      "region": "North Carolina",
+      "state": "North Carolina",
+      "timezone": "EST",
+      "totalDIDs": 620,
+      "activeDIDs": 323
+    },
+    {
+      "id": "223",
+      "code": "910",
+      "region": "North Carolina",
+      "state": "North Carolina",
+      "timezone": "EST",
+      "totalDIDs": 311,
+      "activeDIDs": 65
+    },
+    {
+      "id": "224",
+      "code": "919",
+      "region": "North Carolina",
+      "state": "North Carolina",
+      "timezone": "EST",
+      "totalDIDs": 363,
+      "activeDIDs": 462
+    },
+    {
+      "id": "225",
+      "code": "980",
+      "region": "North Carolina",
+      "state": "North Carolina",
+      "timezone": "EST",
+      "totalDIDs": 661,
+      "activeDIDs": 175
+    },
+    {
+      "id": "226",
+      "code": "984",
+      "region": "North Carolina",
+      "state": "North Carolina",
+      "timezone": "EST",
+      "totalDIDs": 405,
+      "activeDIDs": 20
+    },
+    {
+      "id": "227",
+      "code": "701",
+      "region": "North Dakota",
+      "state": "North Dakota",
+      "timezone": "EST",
+      "totalDIDs": 209,
+      "activeDIDs": 258
+    },
+    {
+      "id": "228",
+      "code": "216",
+      "region": "Ohio",
+      "state": "Ohio",
+      "timezone": "EST",
+      "totalDIDs": 947,
+      "activeDIDs": 413
+    },
+    {
+      "id": "229",
+      "code": "220",
+      "region": "Ohio",
+      "state": "Ohio",
+      "timezone": "EST",
+      "totalDIDs": 262,
+      "activeDIDs": 38
+    },
+    {
+      "id": "230",
+      "code": "234",
+      "region": "Ohio",
+      "state": "Ohio",
+      "timezone": "EST",
+      "totalDIDs": 863,
+      "activeDIDs": 212
+    },
+    {
+      "id": "231",
+      "code": "283",
+      "region": "Ohio",
+      "state": "Ohio",
+      "timezone": "EST",
+      "totalDIDs": 65,
+      "activeDIDs": 288
+    },
+    {
+      "id": "232",
+      "code": "326",
+      "region": "Ohio",
+      "state": "Ohio",
+      "timezone": "EST",
+      "totalDIDs": 642,
+      "activeDIDs": 417
+    },
+    {
+      "id": "233",
+      "code": "330",
+      "region": "Ohio",
+      "state": "Ohio",
+      "timezone": "EST",
+      "totalDIDs": 675,
+      "activeDIDs": 207
+    },
+    {
+      "id": "234",
+      "code": "380",
+      "region": "Ohio",
+      "state": "Ohio",
+      "timezone": "EST",
+      "totalDIDs": 215,
+      "activeDIDs": 304
+    },
+    {
+      "id": "235",
+      "code": "419",
+      "region": "Ohio",
+      "state": "Ohio",
+      "timezone": "EST",
+      "totalDIDs": 195,
+      "activeDIDs": 33
+    },
+    {
+      "id": "236",
+      "code": "440",
+      "region": "Ohio",
+      "state": "Ohio",
+      "timezone": "EST",
+      "totalDIDs": 867,
+      "activeDIDs": 373
+    },
+    {
+      "id": "237",
+      "code": "513",
+      "region": "Ohio",
+      "state": "Ohio",
+      "timezone": "EST",
+      "totalDIDs": 918,
+      "activeDIDs": 221
+    },
+    {
+      "id": "238",
+      "code": "567",
+      "region": "Ohio",
+      "state": "Ohio",
+      "timezone": "EST",
+      "totalDIDs": 932,
+      "activeDIDs": 24
+    },
+    {
+      "id": "239",
+      "code": "614",
+      "region": "Ohio",
+      "state": "Ohio",
+      "timezone": "EST",
+      "totalDIDs": 550,
+      "activeDIDs": 490
+    },
+    {
+      "id": "240",
+      "code": "740",
+      "region": "Ohio",
+      "state": "Ohio",
+      "timezone": "EST",
+      "totalDIDs": 226,
+      "activeDIDs": 79
+    },
+    {
+      "id": "241",
+      "code": "937",
+      "region": "Ohio",
+      "state": "Ohio",
+      "timezone": "EST",
+      "totalDIDs": 203,
+      "activeDIDs": 232
+    },
+    {
+      "id": "242",
+      "code": "405",
+      "region": "Oklahoma",
+      "state": "Oklahoma",
+      "timezone": "EST",
+      "totalDIDs": 228,
+      "activeDIDs": 487
+    },
+    {
+      "id": "243",
+      "code": "539",
+      "region": "Oklahoma",
+      "state": "Oklahoma",
+      "timezone": "EST",
+      "totalDIDs": 893,
+      "activeDIDs": 251
+    },
+    {
+      "id": "244",
+      "code": "572",
+      "region": "Oklahoma",
+      "state": "Oklahoma",
+      "timezone": "EST",
+      "totalDIDs": 693,
+      "activeDIDs": 243
+    },
+    {
+      "id": "245",
+      "code": "580",
+      "region": "Oklahoma",
+      "state": "Oklahoma",
+      "timezone": "EST",
+      "totalDIDs": 759,
+      "activeDIDs": 367
+    },
+    {
+      "id": "246",
+      "code": "918",
+      "region": "Oklahoma",
+      "state": "Oklahoma",
+      "timezone": "EST",
+      "totalDIDs": 920,
+      "activeDIDs": 367
+    },
+    {
+      "id": "247",
+      "code": "458",
+      "region": "Oregon",
+      "state": "Oregon",
+      "timezone": "EST",
+      "totalDIDs": 166,
+      "activeDIDs": 340
+    },
+    {
+      "id": "248",
+      "code": "503",
+      "region": "Oregon",
+      "state": "Oregon",
+      "timezone": "EST",
+      "totalDIDs": 965,
+      "activeDIDs": 10
+    },
+    {
+      "id": "249",
+      "code": "541",
+      "region": "Oregon",
+      "state": "Oregon",
+      "timezone": "EST",
+      "totalDIDs": 86,
+      "activeDIDs": 284
+    },
+    {
+      "id": "250",
+      "code": "971",
+      "region": "Oregon",
+      "state": "Oregon",
+      "timezone": "EST",
+      "totalDIDs": 309,
+      "activeDIDs": 392
+    },
+    {
+      "id": "251",
+      "code": "215",
+      "region": "Pennsylvania",
+      "state": "Pennsylvania",
+      "timezone": "EST",
+      "totalDIDs": 533,
+      "activeDIDs": 275
+    },
+    {
+      "id": "252",
+      "code": "223",
+      "region": "Pennsylvania",
+      "state": "Pennsylvania",
+      "timezone": "EST",
+      "totalDIDs": 86,
+      "activeDIDs": 57
+    },
+    {
+      "id": "253",
+      "code": "267",
+      "region": "Pennsylvania",
+      "state": "Pennsylvania",
+      "timezone": "EST",
+      "totalDIDs": 196,
+      "activeDIDs": 313
+    },
+    {
+      "id": "254",
+      "code": "272",
+      "region": "Pennsylvania",
+      "state": "Pennsylvania",
+      "timezone": "EST",
+      "totalDIDs": 97,
+      "activeDIDs": 153
+    },
+    {
+      "id": "255",
+      "code": "412",
+      "region": "Pennsylvania",
+      "state": "Pennsylvania",
+      "timezone": "EST",
+      "totalDIDs": 635,
+      "activeDIDs": 488
+    },
+    {
+      "id": "256",
+      "code": "445",
+      "region": "Pennsylvania",
+      "state": "Pennsylvania",
+      "timezone": "EST",
+      "totalDIDs": 943,
+      "activeDIDs": 42
+    },
+    {
+      "id": "257",
+      "code": "484",
+      "region": "Pennsylvania",
+      "state": "Pennsylvania",
+      "timezone": "EST",
+      "totalDIDs": 829,
+      "activeDIDs": 333
+    },
+    {
+      "id": "258",
+      "code": "570",
+      "region": "Pennsylvania",
+      "state": "Pennsylvania",
+      "timezone": "EST",
+      "totalDIDs": 204,
+      "activeDIDs": 119
+    },
+    {
+      "id": "259",
+      "code": "610",
+      "region": "Pennsylvania",
+      "state": "Pennsylvania",
+      "timezone": "EST",
+      "totalDIDs": 31,
+      "activeDIDs": 465
+    },
+    {
+      "id": "260",
+      "code": "717",
+      "region": "Pennsylvania",
+      "state": "Pennsylvania",
+      "timezone": "EST",
+      "totalDIDs": 469,
+      "activeDIDs": 466
+    },
+    {
+      "id": "261",
+      "code": "724",
+      "region": "Pennsylvania",
+      "state": "Pennsylvania",
+      "timezone": "EST",
+      "totalDIDs": 860,
+      "activeDIDs": 115
+    },
+    {
+      "id": "262",
+      "code": "814",
+      "region": "Pennsylvania",
+      "state": "Pennsylvania",
+      "timezone": "EST",
+      "totalDIDs": 764,
+      "activeDIDs": 26
+    },
+    {
+      "id": "263",
+      "code": "878",
+      "region": "Pennsylvania",
+      "state": "Pennsylvania",
+      "timezone": "EST",
+      "totalDIDs": 981,
+      "activeDIDs": 237
+    },
+    {
+      "id": "264",
+      "code": "401",
+      "region": "Rhode Island",
+      "state": "Rhode Island",
+      "timezone": "EST",
+      "totalDIDs": 423,
+      "activeDIDs": 308
+    },
+    {
+      "id": "265",
+      "code": "803",
+      "region": "South Carolina",
+      "state": "South Carolina",
+      "timezone": "EST",
+      "totalDIDs": 772,
+      "activeDIDs": 402
+    },
+    {
+      "id": "266",
+      "code": "839",
+      "region": "South Carolina",
+      "state": "South Carolina",
+      "timezone": "EST",
+      "totalDIDs": 918,
+      "activeDIDs": 280
+    },
+    {
+      "id": "267",
+      "code": "843",
+      "region": "South Carolina",
+      "state": "South Carolina",
+      "timezone": "EST",
+      "totalDIDs": 363,
+      "activeDIDs": 28
+    },
+    {
+      "id": "268",
+      "code": "854",
+      "region": "South Carolina",
+      "state": "South Carolina",
+      "timezone": "EST",
+      "totalDIDs": 329,
+      "activeDIDs": 395
+    },
+    {
+      "id": "269",
+      "code": "864",
+      "region": "South Carolina",
+      "state": "South Carolina",
+      "timezone": "EST",
+      "totalDIDs": 62,
+      "activeDIDs": 304
+    },
+    {
+      "id": "270",
+      "code": "605",
+      "region": "South Dakota",
+      "state": "South Dakota",
+      "timezone": "EST",
+      "totalDIDs": 613,
+      "activeDIDs": 444
+    },
+    {
+      "id": "271",
+      "code": "423",
+      "region": "Tennessee",
+      "state": "Tennessee",
+      "timezone": "EST",
+      "totalDIDs": 750,
+      "activeDIDs": 122
+    },
+    {
+      "id": "272",
+      "code": "615",
+      "region": "Tennessee",
+      "state": "Tennessee",
+      "timezone": "EST",
+      "totalDIDs": 342,
+      "activeDIDs": 233
+    },
+    {
+      "id": "273",
+      "code": "629",
+      "region": "Tennessee",
+      "state": "Tennessee",
+      "timezone": "EST",
+      "totalDIDs": 877,
+      "activeDIDs": 171
+    },
+    {
+      "id": "274",
+      "code": "731",
+      "region": "Tennessee",
+      "state": "Tennessee",
+      "timezone": "EST",
+      "totalDIDs": 788,
+      "activeDIDs": 10
+    },
+    {
+      "id": "275",
+      "code": "865",
+      "region": "Tennessee",
+      "state": "Tennessee",
+      "timezone": "EST",
+      "totalDIDs": 281,
+      "activeDIDs": 188
+    },
+    {
+      "id": "276",
+      "code": "901",
+      "region": "Tennessee",
+      "state": "Tennessee",
+      "timezone": "EST",
+      "totalDIDs": 890,
+      "activeDIDs": 466
+    },
+    {
+      "id": "277",
+      "code": "931",
+      "region": "Tennessee",
+      "state": "Tennessee",
+      "timezone": "EST",
+      "totalDIDs": 930,
+      "activeDIDs": 40
+    },
+    {
+      "id": "278",
+      "code": "210",
+      "region": "Texas",
+      "state": "Texas",
+      "timezone": "EST",
+      "totalDIDs": 222,
+      "activeDIDs": 283
+    },
+    {
+      "id": "279",
+      "code": "214",
+      "region": "Texas",
+      "state": "Texas",
+      "timezone": "EST",
+      "totalDIDs": 9,
+      "activeDIDs": 168
+    },
+    {
+      "id": "280",
+      "code": "254",
+      "region": "Texas",
+      "state": "Texas",
+      "timezone": "EST",
+      "totalDIDs": 973,
+      "activeDIDs": 482
+    },
+    {
+      "id": "281",
+      "code": "281",
+      "region": "Texas",
+      "state": "Texas",
+      "timezone": "EST",
+      "totalDIDs": 665,
+      "activeDIDs": 420
+    },
+    {
+      "id": "282",
+      "code": "325",
+      "region": "Texas",
+      "state": "Texas",
+      "timezone": "EST",
+      "totalDIDs": 811,
+      "activeDIDs": 214
+    },
+    {
+      "id": "283",
+      "code": "346",
+      "region": "Texas",
+      "state": "Texas",
+      "timezone": "EST",
+      "totalDIDs": 509,
+      "activeDIDs": 372
+    },
+    {
+      "id": "284",
+      "code": "361",
+      "region": "Texas",
+      "state": "Texas",
+      "timezone": "EST",
+      "totalDIDs": 170,
+      "activeDIDs": 356
+    },
+    {
+      "id": "285",
+      "code": "409",
+      "region": "Texas",
+      "state": "Texas",
+      "timezone": "EST",
+      "totalDIDs": 470,
+      "activeDIDs": 223
+    },
+    {
+      "id": "286",
+      "code": "430",
+      "region": "Texas",
+      "state": "Texas",
+      "timezone": "EST",
+      "totalDIDs": 410,
+      "activeDIDs": 174
+    },
+    {
+      "id": "287",
+      "code": "432",
+      "region": "Texas",
+      "state": "Texas",
+      "timezone": "EST",
+      "totalDIDs": 607,
+      "activeDIDs": 136
+    },
+    {
+      "id": "288",
+      "code": "469",
+      "region": "Texas",
+      "state": "Texas",
+      "timezone": "EST",
+      "totalDIDs": 269,
+      "activeDIDs": 446
+    },
+    {
+      "id": "289",
+      "code": "512",
+      "region": "Texas",
+      "state": "Texas",
+      "timezone": "EST",
+      "totalDIDs": 288,
+      "activeDIDs": 234
+    },
+    {
+      "id": "290",
+      "code": "682",
+      "region": "Texas",
+      "state": "Texas",
+      "timezone": "EST",
+      "totalDIDs": 163,
+      "activeDIDs": 29
+    },
+    {
+      "id": "291",
+      "code": "713",
+      "region": "Texas",
+      "state": "Texas",
+      "timezone": "EST",
+      "totalDIDs": 224,
+      "activeDIDs": 419
+    },
+    {
+      "id": "292",
+      "code": "726",
+      "region": "Texas",
+      "state": "Texas",
+      "timezone": "EST",
+      "totalDIDs": 565,
+      "activeDIDs": 68
+    },
+    {
+      "id": "293",
+      "code": "737",
+      "region": "Texas",
+      "state": "Texas",
+      "timezone": "EST",
+      "totalDIDs": 64,
+      "activeDIDs": 440
+    },
+    {
+      "id": "294",
+      "code": "806",
+      "region": "Texas",
+      "state": "Texas",
+      "timezone": "EST",
+      "totalDIDs": 892,
+      "activeDIDs": 260
+    },
+    {
+      "id": "295",
+      "code": "817",
+      "region": "Texas",
+      "state": "Texas",
+      "timezone": "EST",
+      "totalDIDs": 54,
+      "activeDIDs": 429
+    },
+    {
+      "id": "296",
+      "code": "830",
+      "region": "Texas",
+      "state": "Texas",
+      "timezone": "EST",
+      "totalDIDs": 703,
+      "activeDIDs": 453
+    },
+    {
+      "id": "297",
+      "code": "832",
+      "region": "Texas",
+      "state": "Texas",
+      "timezone": "EST",
+      "totalDIDs": 120,
+      "activeDIDs": 234
+    },
+    {
+      "id": "298",
+      "code": "903",
+      "region": "Texas",
+      "state": "Texas",
+      "timezone": "EST",
+      "totalDIDs": 23,
+      "activeDIDs": 243
+    },
+    {
+      "id": "299",
+      "code": "915",
+      "region": "Texas",
+      "state": "Texas",
+      "timezone": "EST",
+      "totalDIDs": 80,
+      "activeDIDs": 223
+    },
+    {
+      "id": "300",
+      "code": "936",
+      "region": "Texas",
+      "state": "Texas",
+      "timezone": "EST",
+      "totalDIDs": 710,
+      "activeDIDs": 298
+    },
+    {
+      "id": "301",
+      "code": "940",
+      "region": "Texas",
+      "state": "Texas",
+      "timezone": "EST",
+      "totalDIDs": 661,
+      "activeDIDs": 272
+    },
+    {
+      "id": "302",
+      "code": "956",
+      "region": "Texas",
+      "state": "Texas",
+      "timezone": "EST",
+      "totalDIDs": 411,
+      "activeDIDs": 49
+    },
+    {
+      "id": "303",
+      "code": "972",
+      "region": "Texas",
+      "state": "Texas",
+      "timezone": "EST",
+      "totalDIDs": 311,
+      "activeDIDs": 149
+    },
+    {
+      "id": "304",
+      "code": "979",
+      "region": "Texas",
+      "state": "Texas",
+      "timezone": "EST",
+      "totalDIDs": 604,
+      "activeDIDs": 292
+    },
+    {
+      "id": "305",
+      "code": "385",
+      "region": "Utah",
+      "state": "Utah",
+      "timezone": "EST",
+      "totalDIDs": 340,
+      "activeDIDs": 319
+    },
+    {
+      "id": "306",
+      "code": "435",
+      "region": "Utah",
+      "state": "Utah",
+      "timezone": "EST",
+      "totalDIDs": 80,
+      "activeDIDs": 74
+    },
+    {
+      "id": "307",
+      "code": "801",
+      "region": "Utah",
+      "state": "Utah",
+      "timezone": "EST",
+      "totalDIDs": 142,
+      "activeDIDs": 398
+    },
+    {
+      "id": "308",
+      "code": "802",
+      "region": "Vermont",
+      "state": "Vermont",
+      "timezone": "EST",
+      "totalDIDs": 681,
+      "activeDIDs": 461
+    },
+    {
+      "id": "309",
+      "code": "276",
+      "region": "Virginia",
+      "state": "Virginia",
+      "timezone": "EST",
+      "totalDIDs": 739,
+      "activeDIDs": 369
+    },
+    {
+      "id": "310",
+      "code": "434",
+      "region": "Virginia",
+      "state": "Virginia",
+      "timezone": "EST",
+      "totalDIDs": 743,
+      "activeDIDs": 446
+    },
+    {
+      "id": "311",
+      "code": "540",
+      "region": "Virginia",
+      "state": "Virginia",
+      "timezone": "EST",
+      "totalDIDs": 513,
+      "activeDIDs": 36
+    },
+    {
+      "id": "312",
+      "code": "571",
+      "region": "Virginia",
+      "state": "Virginia",
+      "timezone": "EST",
+      "totalDIDs": 204,
+      "activeDIDs": 195
+    },
+    {
+      "id": "313",
+      "code": "703",
+      "region": "Virginia",
+      "state": "Virginia",
+      "timezone": "EST",
+      "totalDIDs": 881,
+      "activeDIDs": 86
+    },
+    {
+      "id": "314",
+      "code": "757",
+      "region": "Virginia",
+      "state": "Virginia",
+      "timezone": "EST",
+      "totalDIDs": 740,
+      "activeDIDs": 73
+    },
+    {
+      "id": "315",
+      "code": "804",
+      "region": "Virginia",
+      "state": "Virginia",
+      "timezone": "EST",
+      "totalDIDs": 131,
+      "activeDIDs": 429
+    },
+    {
+      "id": "316",
+      "code": "206",
+      "region": "Washington",
+      "state": "Washington",
+      "timezone": "EST",
+      "totalDIDs": 249,
+      "activeDIDs": 494
+    },
+    {
+      "id": "317",
+      "code": "253",
+      "region": "Washington",
+      "state": "Washington",
+      "timezone": "EST",
+      "totalDIDs": 151,
+      "activeDIDs": 279
+    },
+    {
+      "id": "318",
+      "code": "360",
+      "region": "Washington",
+      "state": "Washington",
+      "timezone": "EST",
+      "totalDIDs": 148,
+      "activeDIDs": 129
+    },
+    {
+      "id": "319",
+      "code": "425",
+      "region": "Washington",
+      "state": "Washington",
+      "timezone": "EST",
+      "totalDIDs": 905,
+      "activeDIDs": 365
+    },
+    {
+      "id": "320",
+      "code": "509",
+      "region": "Washington",
+      "state": "Washington",
+      "timezone": "EST",
+      "totalDIDs": 492,
+      "activeDIDs": 488
+    },
+    {
+      "id": "321",
+      "code": "564",
+      "region": "Washington",
+      "state": "Washington",
+      "timezone": "EST",
+      "totalDIDs": 354,
+      "activeDIDs": 68
+    },
+    {
+      "id": "322",
+      "code": "304",
+      "region": "West Virginia",
+      "state": "West Virginia",
+      "timezone": "EST",
+      "totalDIDs": 638,
+      "activeDIDs": 170
+    },
+    {
+      "id": "323",
+      "code": "681",
+      "region": "West Virginia",
+      "state": "West Virginia",
+      "timezone": "EST",
+      "totalDIDs": 699,
+      "activeDIDs": 348
+    },
+    {
+      "id": "324",
+      "code": "262",
+      "region": "Wisconsin",
+      "state": "Wisconsin",
+      "timezone": "EST",
+      "totalDIDs": 432,
+      "activeDIDs": 43
+    },
+    {
+      "id": "325",
+      "code": "274",
+      "region": "Wisconsin",
+      "state": "Wisconsin",
+      "timezone": "EST",
+      "totalDIDs": 5,
+      "activeDIDs": 207
+    },
+    {
+      "id": "326",
+      "code": "414",
+      "region": "Wisconsin",
+      "state": "Wisconsin",
+      "timezone": "EST",
+      "totalDIDs": 309,
+      "activeDIDs": 180
+    },
+    {
+      "id": "327",
+      "code": "534",
+      "region": "Wisconsin",
+      "state": "Wisconsin",
+      "timezone": "EST",
+      "totalDIDs": 358,
+      "activeDIDs": 45
+    },
+    {
+      "id": "328",
+      "code": "608",
+      "region": "Wisconsin",
+      "state": "Wisconsin",
+      "timezone": "EST",
+      "totalDIDs": 248,
+      "activeDIDs": 316
+    },
+    {
+      "id": "329",
+      "code": "715",
+      "region": "Wisconsin",
+      "state": "Wisconsin",
+      "timezone": "EST",
+      "totalDIDs": 95,
+      "activeDIDs": 346
+    },
+    {
+      "id": "330",
+      "code": "920",
+      "region": "Wisconsin",
+      "state": "Wisconsin",
+      "timezone": "EST",
+      "totalDIDs": 40,
+      "activeDIDs": 100
+    },
+    {
+      "id": "331",
+      "code": "307",
+      "region": "Wyoming",
+      "state": "Wyoming",
+      "timezone": "EST",
+      "totalDIDs": 439,
+      "activeDIDs": 293
+    },
+    {
+      "id": "332",
+      "code": "800",
+      "region": "Tell Free",
+      "state": "Tell Free",
+      "timezone": "EST",
+      "totalDIDs": 417,
+      "activeDIDs": 237
+    }
+  ]
+}
