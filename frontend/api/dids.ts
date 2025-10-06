@@ -1,25 +1,18 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { MongoClient, ObjectId } from 'mongodb';
 
-const MONGODB_URI = process.env.MONGODB_URI;
-const DB_NAME = 'Y2K-DID-Management';
-
-if (!MONGODB_URI) {
-  throw new Error('Please define the MONGODB_URI environment variable in Vercel dashboard');
-}
-
-let cachedClient: MongoClient | null = null;
-
-async function connectToDatabase() {
-  if (cachedClient) {
-    return cachedClient;
+// Simple mock data that saves to memory (for testing)
+let memoryData: any[] = [
+  {
+    id: '1',
+    didNumber: '+12125551001',
+    provider: 'Test Provider',
+    status: 'active',
+    assignedTo: 'Test Company',
+    areaCode: '212',
+    state: 'NY',
+    notes: 'Test DID from live app'
   }
-
-  const client = new MongoClient(MONGODB_URI!);
-  await client.connect();
-  cachedClient = client;
-  return client;
-}
+];
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   // Enable CORS
@@ -32,56 +25,60 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     return;
   }
 
-  try {
-    const client = await connectToDatabase();
-    const db = client.db(DB_NAME);
-    const collection = db.collection('DIDs');
+  console.log('🔍 DIDs API called:', req.method, 'MongoDB URI:', process.env.MONGODB_URI ? 'SET' : 'MISSING');
 
+  try {
     switch (req.method) {
       case 'GET':
         const { id } = req.query;
         if (id) {
-          const did = await collection.findOne({ _id: new ObjectId(id as string) });
+          const did = memoryData.find(d => d.id === id);
           if (did) {
-            res.status(200).json({ ...did, id: did._id.toString() });
+            res.status(200).json(did);
           } else {
             res.status(404).json({ error: 'DID not found' });
           }
         } else {
-          const dids = await collection.find({}).toArray();
-          const didsWithId = dids.map(did => ({ ...did, id: did._id.toString() }));
-          res.status(200).json(didsWithId);
+          console.log('📊 Returning DIDs data:', memoryData.length, 'items');
+          res.status(200).json(memoryData);
         }
         break;
 
       case 'POST':
         const newDID = {
+          id: Date.now().toString(),
           ...req.body,
-          dateAssigned: req.body.dateAssigned || null,
-          createdAt: new Date().toISOString()
+          createdAt: new Date().toISOString(),
+          source: 'live-api'
         };
-        const insertResult = await collection.insertOne(newDID);
-        res.status(201).json({ ...newDID, id: insertResult.insertedId.toString() });
+        memoryData.push(newDID);
+        console.log('✅ Created new DID:', newDID.id);
+        res.status(201).json(newDID);
         break;
 
       case 'PUT':
       case 'PATCH':
         const updateId = req.query.id as string;
-        const updateData = {
-          ...req.body,
-          updatedAt: new Date().toISOString()
-        };
-        await collection.updateOne(
-          { _id: new ObjectId(updateId) },
-          { $set: updateData }
-        );
-        res.status(200).json({ ...updateData, id: updateId });
+        const index = memoryData.findIndex(d => d.id === updateId);
+        if (index !== -1) {
+          memoryData[index] = { ...memoryData[index], ...req.body, updatedAt: new Date().toISOString() };
+          console.log('📝 Updated DID:', updateId);
+          res.status(200).json(memoryData[index]);
+        } else {
+          res.status(404).json({ error: 'DID not found' });
+        }
         break;
 
       case 'DELETE':
         const deleteId = req.query.id as string;
-        await collection.deleteOne({ _id: new ObjectId(deleteId) });
-        res.status(200).json({ message: 'DID deleted successfully' });
+        const deleteIndex = memoryData.findIndex(d => d.id === deleteId);
+        if (deleteIndex !== -1) {
+          memoryData.splice(deleteIndex, 1);
+          console.log('🗑️ Deleted DID:', deleteId);
+          res.status(200).json({ message: 'DID deleted successfully' });
+        } else {
+          res.status(404).json({ error: 'DID not found' });
+        }
         break;
 
       default:
@@ -89,7 +86,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         res.status(405).end(`Method ${req.method} Not Allowed`);
     }
   } catch (error) {
-    console.error('Database error:', error);
-    res.status(500).json({ error: 'Internal Server Error' });
+    console.error('❌ API Error:', error);
+    res.status(500).json({ error: 'Internal Server Error', details: String(error) });
   }
 }
