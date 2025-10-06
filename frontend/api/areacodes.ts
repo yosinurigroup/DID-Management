@@ -1,34 +1,27 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
+import { MongoClient, ObjectId } from 'mongodb';
 
-// Mock data for area codes
-const mockAreaCodes = [
-  {
-    id: '1',
-    areaCode: '212',
-    state: 'NY',
-    city: 'New York',
-    didCount: 150,
-    availableCount: 25
-  },
-  {
-    id: '2',
-    areaCode: '310',
-    state: 'CA',
-    city: 'Los Angeles',
-    didCount: 200,
-    availableCount: 45
-  },
-  {
-    id: '3',
-    areaCode: '305',
-    state: 'FL',
-    city: 'Miami',
-    didCount: 80,
-    availableCount: 15
+const MONGODB_URI = process.env.MONGODB_URI;
+const DB_NAME = 'Y3K-DID-Management';
+
+if (!MONGODB_URI) {
+  throw new Error('Please define the MONGODB_URI environment variable in Vercel dashboard');
+}
+
+let cachedClient: MongoClient | null = null;
+
+async function connectToDatabase() {
+  if (cachedClient) {
+    return cachedClient;
   }
-];
 
-export default function handler(req: VercelRequest, res: VercelResponse) {
+  const client = new MongoClient(MONGODB_URI!);
+  await client.connect();
+  cachedClient = client;
+  return client;
+}
+
+export default async function handler(req: VercelRequest, res: VercelResponse) {
   // Enable CORS
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
@@ -39,54 +32,62 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
     return;
   }
 
-  switch (req.method) {
-    case 'GET':
-      const { id } = req.query;
-      if (id) {
-        const areaCode = mockAreaCodes.find(ac => ac.id === id);
-        if (areaCode) {
-          res.status(200).json(areaCode);
+  try {
+    const client = await connectToDatabase();
+    const db = client.db(DB_NAME);
+    const collection = db.collection('Area-codes');
+
+    switch (req.method) {
+      case 'GET':
+        const { id } = req.query;
+        if (id) {
+          const areaCode = await collection.findOne({ _id: new ObjectId(id as string) });
+          if (areaCode) {
+            res.status(200).json({ ...areaCode, id: areaCode._id.toString() });
+          } else {
+            res.status(404).json({ error: 'Area code not found' });
+          }
         } else {
-          res.status(404).json({ error: 'Area code not found' });
+          const areaCodes = await collection.find({}).toArray();
+          const areaCodesWithId = areaCodes.map((areaCode: any) => ({ ...areaCode, id: areaCode._id.toString() }));
+          res.status(200).json(areaCodesWithId);
         }
-      } else {
-        res.status(200).json(mockAreaCodes);
-      }
-      break;
+        break;
 
-    case 'POST':
-      const newAreaCode = {
-        id: Date.now().toString(),
-        ...req.body
-      };
-      mockAreaCodes.push(newAreaCode);
-      res.status(201).json(newAreaCode);
-      break;
+      case 'POST':
+        const newAreaCode = {
+          ...req.body,
+          createdAt: new Date().toISOString()
+        };
+        const insertResult = await collection.insertOne(newAreaCode);
+        res.status(201).json({ ...newAreaCode, id: insertResult.insertedId.toString() });
+        break;
 
-    case 'PUT':
-      const updateId = req.query.id as string;
-      const areaCodeIndex = mockAreaCodes.findIndex(ac => ac.id === updateId);
-      if (areaCodeIndex !== -1) {
-        mockAreaCodes[areaCodeIndex] = { ...mockAreaCodes[areaCodeIndex], ...req.body };
-        res.status(200).json(mockAreaCodes[areaCodeIndex]);
-      } else {
-        res.status(404).json({ error: 'Area code not found' });
-      }
-      break;
+      case 'PUT':
+        const updateId = req.query.id as string;
+        const updateData = {
+          ...req.body,
+          updatedAt: new Date().toISOString()
+        };
+        await collection.updateOne(
+          { _id: new ObjectId(updateId) },
+          { $set: updateData }
+        );
+        res.status(200).json({ ...updateData, id: updateId });
+        break;
 
-    case 'DELETE':
-      const deleteId = req.query.id as string;
-      const deleteIndex = mockAreaCodes.findIndex(ac => ac.id === deleteId);
-      if (deleteIndex !== -1) {
-        mockAreaCodes.splice(deleteIndex, 1);
+      case 'DELETE':
+        const deleteId = req.query.id as string;
+        await collection.deleteOne({ _id: new ObjectId(deleteId) });
         res.status(200).json({ message: 'Area code deleted successfully' });
-      } else {
-        res.status(404).json({ error: 'Area code not found' });
-      }
-      break;
+        break;
 
-    default:
-      res.setHeader('Allow', ['GET', 'POST', 'PUT', 'DELETE']);
-      res.status(405).end(`Method ${req.method} Not Allowed`);
+      default:
+        res.setHeader('Allow', ['GET', 'POST', 'PUT', 'DELETE']);
+        res.status(405).end(`Method ${req.method} Not Allowed`);
+    }
+  } catch (error) {
+    console.error('Database error:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
   }
 }

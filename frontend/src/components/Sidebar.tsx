@@ -106,14 +106,14 @@ const Sidebar: React.FC<SidebarProps> = ({
   ];
 
   return (
-    <div className="bg-gray-800 text-white h-screen flex flex-col w-64">
+    <div className="bg-gray-800 text-white h-screen flex flex-col w-64" data-testid="sidebar">
       {/* Header */}
       <div className="flex items-center justify-between p-4 border-b border-gray-700">
         <h1 className="text-xl font-bold text-blue-400">DID Management</h1>
       </div>
 
       {/* Navigation menu */}
-      <nav className="flex-1 p-4">
+      <nav className="flex-1 p-4" data-testid="sidebar-nav">
         <ul className="space-y-2">
           {navigationItems.map((item) => {
             const Icon = item.icon;
@@ -121,6 +121,7 @@ const Sidebar: React.FC<SidebarProps> = ({
               <li key={item.id}>
                 <button
                   onClick={() => onItemClick(item.id)}
+                  data-testid={`nav-${item.id}`}
                   className={`w-full flex items-center p-3 rounded-lg transition-colors ${
                     activeItem === item.id
                       ? 'bg-blue-600 text-white'

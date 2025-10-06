@@ -5,13 +5,20 @@
   "scripts": {
     "build": "cd frontend && npm ci && npm run build",
     "dev": "cd frontend && npm start",
-    "install-all": "cd frontend && npm install && cd ../api && npm install"
+    "install-all": "cd frontend && npm install && cd ../api && npm install",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report",
+    "test:install": "playwright install"
   },
   "dependencies": {
-    "node-fetch": "^3.3.2",
-    "@vercel/node": "^3.0.0"
+    "@vercel/node": "^3.0.0",
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
+    "@playwright/test": "^1.56.0",
     "vercel": "^32.0.0"
   }
 }

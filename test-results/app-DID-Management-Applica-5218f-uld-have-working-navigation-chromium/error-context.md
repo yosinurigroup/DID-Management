@@ -1,0 +1,280 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - generic [ref=e6]:
+    - heading "DID Management" [level=1] [ref=e8]
+    - navigation [ref=e9]:
+      - list [ref=e10]:
+        - listitem [ref=e11]:
+          - button "DIDs" [ref=e12] [cursor=pointer]:
+            - img [ref=e13]
+            - generic [ref=e15]: DIDs
+        - listitem [ref=e16]:
+          - button "Area Codes" [ref=e17] [cursor=pointer]:
+            - img [ref=e18]
+            - generic [ref=e20]: Area Codes
+        - listitem [ref=e21]:
+          - button "Companies" [ref=e22] [cursor=pointer]:
+            - img [ref=e23]
+            - generic [ref=e25]: Companies
+        - listitem [ref=e26]:
+          - button "DialB" [ref=e27] [cursor=pointer]:
+            - img [ref=e28]
+            - generic [ref=e30]: DialB
+    - button "v1.0.4" [ref=e33] [cursor=pointer]
+  - generic [ref=e34]:
+    - banner [ref=e35]:
+      - generic [ref=e36]:
+        - heading "DIDs Management" [level=2] [ref=e37]
+        - generic [ref=e39]: Home / DIDs Management
+    - main [ref=e40]:
+      - generic [ref=e41]:
+        - generic [ref=e42]:
+          - generic [ref=e43]:
+            - paragraph [ref=e44]: Total DIDs
+            - paragraph [ref=e45]: "3"
+          - generic [ref=e46]:
+            - paragraph [ref=e47]: Total Providers
+            - paragraph [ref=e48]: "2"
+          - generic [ref=e49]:
+            - paragraph [ref=e50]: Total Area Codes
+            - paragraph [ref=e51]: "2"
+          - generic [ref=e52]:
+            - paragraph [ref=e53]: Total States
+            - paragraph [ref=e54]: "2"
+        - generic [ref=e55]:
+          - textbox "Search DIDs by number, provider, trank ID, forward, area code, state, company ID, or company name..." [ref=e57]
+          - generic [ref=e58]:
+            - button "Add DID" [ref=e59] [cursor=pointer]
+            - button "Import DIDs" [ref=e60] [cursor=pointer]
+            - button "Export All" [ref=e61] [cursor=pointer]
+            - button "Export DIDs Only" [ref=e62] [cursor=pointer]
+        - table [ref=e65]:
+          - rowgroup [ref=e66]:
+            - row "Provider DID# Trank ID DID Forward Area Code State Company ID Company Name DialB Status Actions" [ref=e67]:
+              - cell [ref=e68]:
+                - checkbox [ref=e69]
+              - cell "Provider" [ref=e70]:
+                - generic [ref=e71]:
+                  - text: Provider
+                  - button "Filter provider" [ref=e73] [cursor=pointer]:
+                    - img [ref=e74]
+                  - button "Sort provider A-Z" [ref=e76] [cursor=pointer]:
+                    - img [ref=e77]
+              - cell "DID#" [ref=e81]:
+                - generic [ref=e82]:
+                  - text: DID#
+                  - button "Filter didNumber" [ref=e84] [cursor=pointer]:
+                    - img [ref=e85]
+                  - button "Sort didNumber A-Z" [ref=e87] [cursor=pointer]:
+                    - img [ref=e88]
+              - cell "Trank ID" [ref=e92]:
+                - generic [ref=e93]:
+                  - text: Trank ID
+                  - button "Filter trankId" [ref=e95] [cursor=pointer]:
+                    - img [ref=e96]
+                  - button "Sort trankId A-Z" [ref=e98] [cursor=pointer]:
+                    - img [ref=e99]
+              - cell "DID Forward" [ref=e103]:
+                - generic [ref=e104]:
+                  - text: DID Forward
+                  - button "Filter didForward" [ref=e106] [cursor=pointer]:
+                    - img [ref=e107]
+                  - button "Sort didForward A-Z" [ref=e109] [cursor=pointer]:
+                    - img [ref=e110]
+              - cell "Area Code" [ref=e114]:
+                - generic [ref=e115]:
+                  - text: Area Code
+                  - button "Filter areaCode" [ref=e117] [cursor=pointer]:
+                    - img [ref=e118]
+                  - button "Sort areaCode A-Z" [ref=e120] [cursor=pointer]:
+                    - img [ref=e121]
+              - cell "State" [ref=e125]:
+                - generic [ref=e126]:
+                  - text: State
+                  - button "Filter state" [ref=e128] [cursor=pointer]:
+                    - img [ref=e129]
+                  - button "Sort state A-Z" [ref=e131] [cursor=pointer]:
+                    - img [ref=e132]
+              - cell "Company ID" [ref=e136]:
+                - generic [ref=e137]:
+                  - text: Company ID
+                  - button "Filter companyId" [ref=e139] [cursor=pointer]:
+                    - img [ref=e140]
+                  - button "Sort companyId A-Z" [ref=e142] [cursor=pointer]:
+                    - img [ref=e143]
+              - cell "Company Name" [ref=e147]:
+                - generic [ref=e148]:
+                  - text: Company Name
+                  - button "Filter companyName" [ref=e150] [cursor=pointer]:
+                    - img [ref=e151]
+                  - button "Sort companyName A-Z" [ref=e153] [cursor=pointer]:
+                    - img [ref=e154]
+              - cell "DialB Status" [ref=e158]:
+                - generic [ref=e159]:
+                  - text: DialB Status
+                  - button "Filter dialBStatus" [ref=e161] [cursor=pointer]:
+                    - img [ref=e162]
+                  - button "Sort dialBStatus A-Z" [ref=e164] [cursor=pointer]:
+                    - img [ref=e165]
+              - cell "Actions" [ref=e169]
+          - rowgroup [ref=e170]:
+            - row "Sip Trunk 12023185300 SIP-001 not set 202 DC COMP001 Test Company Unknown" [ref=e171]:
+              - cell [ref=e172]:
+                - checkbox [ref=e173]
+              - cell "Sip Trunk" [ref=e174]:
+                - generic [ref=e175]:
+                  - generic [ref=e176]: Sip Trunk
+                  - button [ref=e177] [cursor=pointer]:
+                    - img [ref=e178]
+              - cell "12023185300" [ref=e180]:
+                - generic [ref=e181]:
+                  - generic [ref=e182]: "12023185300"
+                  - button [ref=e183] [cursor=pointer]:
+                    - img [ref=e184]
+              - cell "SIP-001" [ref=e186]:
+                - generic [ref=e187]:
+                  - generic [ref=e188]: SIP-001
+                  - button [ref=e189] [cursor=pointer]:
+                    - img [ref=e190]
+              - cell "not set" [ref=e192]:
+                - generic [ref=e193]:
+                  - generic [ref=e194]: not set
+                  - button [ref=e195] [cursor=pointer]:
+                    - img [ref=e196]
+              - cell "202" [ref=e198]:
+                - generic [ref=e199]:
+                  - generic [ref=e200]: "202"
+                  - button [ref=e201] [cursor=pointer]:
+                    - img [ref=e202]
+              - cell "DC" [ref=e204]:
+                - generic [ref=e205]:
+                  - generic [ref=e206]: DC
+                  - button [ref=e207] [cursor=pointer]:
+                    - img [ref=e208]
+              - cell "COMP001" [ref=e210]:
+                - generic [ref=e211]:
+                  - generic [ref=e212]: COMP001
+                  - button [ref=e213] [cursor=pointer]:
+                    - img [ref=e214]
+              - cell "Test Company" [ref=e216]:
+                - generic [ref=e217]:
+                  - generic [ref=e218]: Test Company
+                  - button [ref=e219] [cursor=pointer]:
+                    - img [ref=e220]
+              - cell "Unknown" [ref=e222]:
+                - generic [ref=e223]: Unknown
+              - cell [ref=e224]:
+                - generic [ref=e225]:
+                  - button "Edit row" [ref=e226] [cursor=pointer]:
+                    - img [ref=e227]
+                  - button "Delete row" [ref=e229] [cursor=pointer]:
+                    - img [ref=e230]
+            - row "DIDWW 13105796937 DID-001 not set 310 California COMP002 Test Company 2 Spam" [ref=e232]:
+              - cell [ref=e233]:
+                - checkbox [ref=e234]
+              - cell "DIDWW" [ref=e235]:
+                - generic [ref=e236]:
+                  - generic [ref=e237]: DIDWW
+                  - button [ref=e238] [cursor=pointer]:
+                    - img [ref=e239]
+              - cell "13105796937" [ref=e241]:
+                - generic [ref=e242]:
+                  - generic [ref=e243]: "13105796937"
+                  - button [ref=e244] [cursor=pointer]:
+                    - img [ref=e245]
+              - cell "DID-001" [ref=e247]:
+                - generic [ref=e248]:
+                  - generic [ref=e249]: DID-001
+                  - button [ref=e250] [cursor=pointer]:
+                    - img [ref=e251]
+              - cell "not set" [ref=e253]:
+                - generic [ref=e254]:
+                  - generic [ref=e255]: not set
+                  - button [ref=e256] [cursor=pointer]:
+                    - img [ref=e257]
+              - cell "310" [ref=e259]:
+                - generic [ref=e260]:
+                  - generic [ref=e261]: "310"
+                  - button [ref=e262] [cursor=pointer]:
+                    - img [ref=e263]
+              - cell "California" [ref=e265]:
+                - generic [ref=e266]:
+                  - generic [ref=e267]: California
+                  - button [ref=e268] [cursor=pointer]:
+                    - img [ref=e269]
+              - cell "COMP002" [ref=e271]:
+                - generic [ref=e272]:
+                  - generic [ref=e273]: COMP002
+                  - button [ref=e274] [cursor=pointer]:
+                    - img [ref=e275]
+              - cell "Test Company 2" [ref=e277]:
+                - generic [ref=e278]:
+                  - generic [ref=e279]: Test Company 2
+                  - button [ref=e280] [cursor=pointer]:
+                    - img [ref=e281]
+              - cell "Spam" [ref=e283]:
+                - generic [ref=e284]:
+                  - img [ref=e285]
+                  - text: Spam
+              - cell [ref=e287]:
+                - generic [ref=e288]:
+                  - button "Edit row" [ref=e289] [cursor=pointer]:
+                    - img [ref=e290]
+                  - button "Delete row" [ref=e292] [cursor=pointer]:
+                    - img [ref=e293]
+            - row "DIDWW 13109298978 DID-002 not set 310 California COMP003 Test Company 3 Clean" [ref=e295]:
+              - cell [ref=e296]:
+                - checkbox [ref=e297]
+              - cell "DIDWW" [ref=e298]:
+                - generic [ref=e299]:
+                  - generic [ref=e300]: DIDWW
+                  - button [ref=e301] [cursor=pointer]:
+                    - img [ref=e302]
+              - cell "13109298978" [ref=e304]:
+                - generic [ref=e305]:
+                  - generic [ref=e306]: "13109298978"
+                  - button [ref=e307] [cursor=pointer]:
+                    - img [ref=e308]
+              - cell "DID-002" [ref=e310]:
+                - generic [ref=e311]:
+                  - generic [ref=e312]: DID-002
+                  - button [ref=e313] [cursor=pointer]:
+                    - img [ref=e314]
+              - cell "not set" [ref=e316]:
+                - generic [ref=e317]:
+                  - generic [ref=e318]: not set
+                  - button [ref=e319] [cursor=pointer]:
+                    - img [ref=e320]
+              - cell "310" [ref=e322]:
+                - generic [ref=e323]:
+                  - generic [ref=e324]: "310"
+                  - button [ref=e325] [cursor=pointer]:
+                    - img [ref=e326]
+              - cell "California" [ref=e328]:
+                - generic [ref=e329]:
+                  - generic [ref=e330]: California
+                  - button [ref=e331] [cursor=pointer]:
+                    - img [ref=e332]
+              - cell "COMP003" [ref=e334]:
+                - generic [ref=e335]:
+                  - generic [ref=e336]: COMP003
+                  - button [ref=e337] [cursor=pointer]:
+                    - img [ref=e338]
+              - cell "Test Company 3" [ref=e340]:
+                - generic [ref=e341]:
+                  - generic [ref=e342]: Test Company 3
+                  - button [ref=e343] [cursor=pointer]:
+                    - img [ref=e344]
+              - cell "Clean" [ref=e346]:
+                - generic [ref=e347]:
+                  - img [ref=e348]
+                  - text: Clean
+              - cell [ref=e350]:
+                - generic [ref=e351]:
+                  - button "Edit row" [ref=e352] [cursor=pointer]:
+                    - img [ref=e353]
+                  - button "Delete row" [ref=e355] [cursor=pointer]:
+                    - img [ref=e356]
+```
