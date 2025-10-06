@@ -2,7 +2,7 @@ import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { MongoClient, ObjectId } from 'mongodb';
 
 const MONGODB_URI = process.env.MONGODB_URI;
-const DB_NAME = 'Y3K-DID-Management';
+const DB_NAME = 'Y2K-DID-Management';
 
 if (!MONGODB_URI) {
   throw new Error('Please define the MONGODB_URI environment variable in Vercel dashboard');
